@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-CHIRP",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.39,
+  "green": 0.65,
+  "blue": 0.76,
+  "contrast": 1.26,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/piercing_wail.tres"
+}

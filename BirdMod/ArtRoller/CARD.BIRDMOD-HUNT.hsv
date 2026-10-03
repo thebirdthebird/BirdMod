@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-HUNT",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.43,
+  "green": 0.73,
+  "blue": 1.05,
+  "contrast": 1.36,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/fade.tres"
+}

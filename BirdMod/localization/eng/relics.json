@@ -1,0 +1,23 @@
+{
+  "BIRDMOD-TRIBAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Instinct|Instincts}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-TRIBAL_FEATHER.flavor": "The only remnant of the tribe.",
+  "BIRDMOD-TRIBAL_FEATHER.title": "Tribal Feather",
+  "BIRDMOD-RITUAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Ancestral Guidance|Ancestral Guidances}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-RITUAL_FEATHER.flavor": "A feather from the tribe, infused with power beyond comprehension.",
+  "BIRDMOD-RITUAL_FEATHER.title": "Ritual Feather",
+  "BIRDMOD-PETAL_FEATHER.description": "While your HP is at or below 50%, you have [blue]{StrengthPower}[/blue] additional [gold]Dexterity[/gold].",
+  "BIRDMOD-PETAL_FEATHER.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Whenever I'm in danger, it makes me feel... light.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-PETAL_FEATHER.title": "Petal Feather",
+  "BIRDMOD-CLOAK_OF_DAGGERS.description": "After gaining [gold]Dexterity[/gold] from a card, add [blue]{Cards}[/blue] [gold]Shiv[/gold]{Cards:plural:|s} to your [gold]Hand[/gold].",
+  "BIRDMOD-CLOAK_OF_DAGGERS.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Someone sew shiv sheaths into the inside of this cloak... Seems a bit superfluous, but sure.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-CLOAK_OF_DAGGERS.title": "Cloak Of Daggers",
+  "BIRDMOD-COMBAT_MANUAL.description": "After taking unblocked attack damage, gain [blue]{DodgePower:diff()}[/blue] [gold]Dodge[/gold].",
+  "BIRDMOD-COMBAT_MANUAL.flavor": "[outline_size=8][outline_color=white][color=#000000]\"The entire book is just the same sentence, over and over.\nDon't get hit.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-COMBAT_MANUAL.title": "Combat Manual",
+  "BIRDMOD-AEROGEL_CALENDAR.description": "At the start of each combat, apply [blue]{StaggeringPower:diff()}[/blue] [gold]Staggering[/gold] to ALL enemies that triggers in [blue]{StaggeringHits:diff()}[/blue] hits.",
+  "BIRDMOD-AEROGEL_CALENDAR.flavor": "[outline_size=8][outline_color=white][color=#000000]\"I have no idea what this is made out of, but I can't damage it in any way.\nIt feels nearly indestructable...\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-AEROGEL_CALENDAR.title": "Aerogel Calendar",
+  "BIRDMOD-TALON_PACK.description": "Upon pickup, add [blue]1[/blue] [gold]Talon[/gold] to your Deck enchanted with [gold]Adroit[/gold] [blue]{Adroit}[/blue].",
+  "BIRDMOD-TALON_PACK.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Even though it looks like a toy, it's scarily tough and sharp.\n...I feel cool holding it.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-TALON_PACK.title": "Talon Pack"
+}

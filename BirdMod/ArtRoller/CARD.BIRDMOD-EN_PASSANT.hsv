@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-EN_PASSANT",
+  "hue": 1,
+  "saturation": 1.36,
+  "value": 1.07,
+  "red": 1.42,
+  "green": 1.15,
+  "blue": 0.95,
+  "contrast": 0.99,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/master_of_strategy.tres"
+}

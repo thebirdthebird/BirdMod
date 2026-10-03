@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-TRIP_UP",
+  "hue": 1,
+  "saturation": 1.22,
+  "value": 1,
+  "red": 1.58,
+  "green": 0.71,
+  "blue": 0.69,
+  "contrast": 1.09,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/leg_sweep.tres"
+}

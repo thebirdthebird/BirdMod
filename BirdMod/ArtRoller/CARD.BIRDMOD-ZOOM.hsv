@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-ZOOM",
+  "hue": 1,
+  "saturation": 1,
+  "value": 0.88,
+  "red": 1.47,
+  "green": 0.61,
+  "blue": 1,
+  "contrast": 1,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/blur.tres"
+}

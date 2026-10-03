@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-MOMENTUM",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.35,
+  "green": 0.62,
+  "blue": 0.65,
+  "contrast": 1.43,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/speedster.tres"
+}

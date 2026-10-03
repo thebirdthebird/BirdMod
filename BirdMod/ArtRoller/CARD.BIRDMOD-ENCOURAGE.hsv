@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-ENCOURAGE",
+  "hue": 1,
+  "saturation": 0.8,
+  "value": 1.2,
+  "red": 1.26,
+  "green": 0.52,
+  "blue": 0.44,
+  "contrast": 1.03,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/believe_in_you.tres"
+}

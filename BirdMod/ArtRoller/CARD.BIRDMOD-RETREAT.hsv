@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-RETREAT",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.41,
+  "green": 0.79,
+  "blue": 1.68,
+  "contrast": 1,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/status/frantic_escape.tres"
+}

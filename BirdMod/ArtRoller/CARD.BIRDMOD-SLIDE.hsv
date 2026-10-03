@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-SLIDE",
+  "hue": 1,
+  "saturation": 1.71,
+  "value": 0.59,
+  "red": 1.51,
+  "green": 1.83,
+  "blue": 0.52,
+  "contrast": 1.44,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/acrobatics.tres"
+}

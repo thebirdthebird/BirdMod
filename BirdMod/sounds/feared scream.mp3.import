@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ds0j48ampuhg3"
+path="res://.godot/imported/feared scream.mp3-15c152e07c950af9a9193631c307f56e.mp3str"
+
+[deps]
+
+source_file="res://BirdMod/sounds/feared scream.mp3"
+dest_files=["res://.godot/imported/feared scream.mp3-15c152e07c950af9a9193631c307f56e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

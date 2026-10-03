@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-BACKPEDAL",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 2,
+  "green": 1.01,
+  "blue": 0.77,
+  "contrast": 1.37,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/escape_plan.tres"
+}

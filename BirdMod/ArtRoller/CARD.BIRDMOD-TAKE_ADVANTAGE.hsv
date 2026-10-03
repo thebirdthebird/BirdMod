@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-TAKE_ADVANTAGE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.49,
+  "green": 0.82,
+  "blue": 0.81,
+  "contrast": 1.23,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/necrobinder/fear.tres"
+}

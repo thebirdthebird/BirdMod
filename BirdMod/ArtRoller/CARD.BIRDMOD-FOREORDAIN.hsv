@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-FOREORDAIN",
+  "hue": 0.61,
+  "saturation": 0.6,
+  "value": 1.84,
+  "red": 0.52,
+  "green": 0,
+  "blue": 0.36,
+  "contrast": 1.17,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/necrobinder/countdown.tres"
+}

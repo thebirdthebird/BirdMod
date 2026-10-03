@@ -1,0 +1,31 @@
+﻿{
+  "BIRDMOD-DAGGER_EVENT.loss": "{character} [sine]sacrificed[/sine] {pronounObject}self.",
+  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.ORNATE.description": "Add [orange]{Quest}[/orange] to your [gold]Deck[/gold].",
+  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.ORNATE.title": "Take the Dagger",
+  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.PLAIN.description": "Lose [red]{HpLoss}[/red] HP. Gain [blue]{Gold}[/blue] [gold]Gold[/gold].",
+  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.PLAIN.title": "Sacrifice",
+  "BIRDMOD-DAGGER_EVENT.pages.ORNATE.description": "Yoinked the dagger.",
+  "BIRDMOD-DAGGER_EVENT.pages.PLAIN.description": "You sacrificed your hp for money.",
+  "BIRDMOD-DAGGER_EVENT.title": "Dagger Test Event",
+  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.description": "You test dagger. You can choose to take the dagger or sacrifice hp for money.\n\n\nTHIS WILL BE COMPLETED LATER. IM SORRY.",
+  "BIRDMOD-IMBUE_EVENT.loss": "{character} [sine]sacrificed[/sine] {pronounObject}self.",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.ORNATE.description": "Add [orange]{Quest}[/orange] to your [gold]Deck[/gold].",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.ORNATE.title": "Take the Imbue",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.PLAIN.description": "Lose [red]{HpLoss}[/red] HP. Gain [blue]{Gold}[/blue] [gold]Gold[/gold].",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.PLAIN.title": "Sacrifice",
+  "BIRDMOD-IMBUE_EVENT.pages.ORNATE.description": "Yoinked the Imbue.",
+  "BIRDMOD-IMBUE_EVENT.pages.PLAIN.description": "You sacrificed your hp for money.",
+  "BIRDMOD-IMBUE_EVENT.title": "Imbue Test Event",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.description": "You test imbue. You can choose to take the imbue or sacrifice hp for money.\n\n\nTHIS WILL BE COMPLETED LATER. IM SORRY.",
+  "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.description": "You come across... [sine]yourself?[/sine]\n\nThe other you seems surprised to see you, too.\n\nShe braces for a fight...",
+  "BIRDMOD-REFLECTION_EVENT.title": "It's You",
+  "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.options.RUN.title": "Run Away",
+  "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.options.RUN.description": "Nothing happens.",
+  "BIRDMOD-DAGGER_EVENT.pages.RUN.description": "You turned tail and ran away from yourself.\nThere's probably something poetic about that.",
+  "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.options.FIGHT.title": "Fight the Reflection",
+  "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.options.FIGHT.description": "Begin an [red][jitter]extremely[/jitter][/red] difficult encounter for a [sine]special[/sine] reward.\n[font_size=14]Very buggy. Probably not worth it. Please give it a shot anyway.[/font_size]"
+  
+  
+  
+  
+}

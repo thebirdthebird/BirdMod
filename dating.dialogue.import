@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://db7kcyett0y58"
+path="res://.godot/imported/dating.dialogue-295659fa584db074309d3216b275a7a2.tres"
+
+[deps]
+
+source_file="res://dating.dialogue"
+dest_files=["res://.godot/imported/dating.dialogue-295659fa584db074309d3216b275a7a2.tres"]
+
+[params]
+
+defaults=true

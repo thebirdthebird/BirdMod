@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-URGE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.52,
+  "green": 0.36,
+  "blue": 1,
+  "contrast": 1,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/regent/charge.tres"
+}

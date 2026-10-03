@@ -1,0 +1,16 @@
+{
+  "BIRDMOD-BIRD_MOD.aromaPrinciple": "Lore",
+  "BIRDMOD-BIRD_MOD.banter.alive.endTurnPing": "Squeak!",
+  "BIRDMOD-BIRD_MOD.banter.dead.endTurnPing": "...",
+  "BIRDMOD-BIRD_MOD.cardsModifierDescription": "Bird cards will now appear in rewards and shops.",
+  "BIRDMOD-BIRD_MOD.cardsModifierTitle": "Bird Cards",
+  "BIRDMOD-BIRD_MOD.description": "A birdlike raptorlike creature lost in the Spire.\nSpeedy, pretty, but frail.",  
+  "BIRDMOD-BIRD_MOD.eventDeathPrevention": "!!!",
+  "BIRDMOD-BIRD_MOD.goldMonologue": "!",
+  "BIRDMOD-BIRD_MOD.possessiveAdjective": "her",
+  "BIRDMOD-BIRD_MOD.pronounObject": "her",
+  "BIRDMOD-BIRD_MOD.pronounPossessive": "hers",
+  "BIRDMOD-BIRD_MOD.pronounSubject": "she",
+  "BIRDMOD-BIRD_MOD.title": "The Bird",
+  "BIRDMOD-BIRD_MOD.titleObject": "The BirdMod"
+}

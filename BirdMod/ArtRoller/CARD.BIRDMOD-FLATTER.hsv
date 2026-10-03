@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-FLATTER",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.42,
+  "green": 0.85,
+  "blue": 1.06,
+  "contrast": 1.17,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/regent/know_thy_place.tres"
+}

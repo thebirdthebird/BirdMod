@@ -1,0 +1,227 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqrhd5ulwllm8"]
+
+[ext_resource type="Texture2D" uid="uid://cisq1etg3irn3" path="res://BirdMod/images/packed/compute-1.png.png" id="1_77mh8"]
+[ext_resource type="Texture2D" uid="uid://bbocmgmv8fy3n" path="res://BirdMod/images/packed/finishedgif-46.png.png" id="2_qj7uy"]
+[ext_resource type="Texture2D" uid="uid://buaa1wvnfjkmu" path="res://BirdMod/images/packed/finishedgif-47.png.png" id="3_j5hoy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pmobn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5hoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5hoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5hoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 100.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5hoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qj7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77mh8")
+}, {
+"duration": 100.0,
+"texture": ExtResource("1_77mh8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[node name="PlaceholderCharacterSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(1765.76, 790.1033)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_pmobn")
+animation = &"idle"
+autoplay = "idle"
+flip_h = true

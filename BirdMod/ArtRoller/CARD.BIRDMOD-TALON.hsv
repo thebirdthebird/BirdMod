@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-TALON",
+  "hue": 1,
+  "saturation": 0.84,
+  "value": 0.85,
+  "red": 1.47,
+  "green": 0,
+  "blue": 0,
+  "contrast": 2,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/defect/claw.tres"
+}

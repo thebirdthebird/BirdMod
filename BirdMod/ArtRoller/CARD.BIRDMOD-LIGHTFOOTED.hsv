@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-LIGHTFOOTED",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.33,
+  "green": 0.67,
+  "blue": 0.67,
+  "contrast": 0.96,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/shadow_step.tres"
+}

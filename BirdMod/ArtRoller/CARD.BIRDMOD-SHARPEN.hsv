@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-SHARPEN",
+  "hue": 1,
+  "saturation": 0.97,
+  "value": 0.7,
+  "red": 1.53,
+  "green": 0.41,
+  "blue": 0.44,
+  "contrast": 1.37,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/defect/claw.tres"
+}

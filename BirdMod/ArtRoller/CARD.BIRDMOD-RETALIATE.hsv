@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-RETALIATE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 0.87,
+  "red": 1.14,
+  "green": 0.71,
+  "blue": 1,
+  "contrast": 1.21,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/spite.tres"
+}

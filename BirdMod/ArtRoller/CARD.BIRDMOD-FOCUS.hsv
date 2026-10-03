@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-FOCUS",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.7,
+  "green": 0.5,
+  "blue": 0.58,
+  "contrast": 1.14,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/regent/convergence.tres"
+}

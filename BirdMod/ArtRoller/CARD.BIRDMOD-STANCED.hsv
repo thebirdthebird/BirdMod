@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-STANCED",
+  "hue": 1,
+  "saturation": 0.74,
+  "value": 1,
+  "red": 1.28,
+  "green": 0.67,
+  "blue": 0.66,
+  "contrast": 1.45,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/footwork.tres"
+}

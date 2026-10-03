@@ -1,0 +1,9 @@
+﻿{
+  "BIRDMOD.mod_title": "Bird Mod",
+  "BIRDMOD-UPLOAD_METRICS.title": "Upload Gameplay Data",
+  "BIRDMOD-UPLOAD_METRICS.hover.desc": "Gameplay data is sent while playing Bird Mod to help with mod balancing.\nPersonally identifying information is not collected.",
+  "BIRDMOD-CLOSE_TO_DEATH_MUSIC.title": "Close to Death Music",
+  "BIRDMOD-CLOSE_TO_DEATH_MUSIC.hover.desc": "Play custom music when you are close to death as The Bird.",
+  "BIRDMOD-CHATTY_BIRD.title": "Chatty Bird",
+  "BIRDMOD-CHATTY_BIRD.hover.desc": "Display text bubbles when playing as The Bird in various scenarios."
+}

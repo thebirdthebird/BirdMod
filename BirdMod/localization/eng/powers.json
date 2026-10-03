@@ -1,0 +1,133 @@
+{
+  "BIRDMOD-FAIRY_POTION_POWER.description": "Has Fairy Potions.",
+  "BIRDMOD-FAIRY_POTION_POWER.smartDescription": "Holds [blue]{Amount}[/blue] Fairy Potion{Amount:plural:|s}. Activates before [gold]Lizard Tail[/gold].",
+  "BIRDMOD-FAIRY_POTION_POWER.title": "Fairy Potion",
+
+  "BIRDMOD-LIZARD_TAIL_POWER.description": "Has a [gold]Lizard Tail[/gold].",
+  "BIRDMOD-LIZARD_TAIL_POWER.smartDescription": "Has an unused [gold]Lizard Tail[/gold] relic.",
+  "BIRDMOD-LIZARD_TAIL_POWER.title": "Lizard Tail",
+
+  "BIRDMOD-REFLECTION_POWER.description": "[gold]Your Reflection[/gold] draws [blue]7[/blue] cards every turn.\n[gold]Your Reflection[/gold] has a max energy of [blue]4[/blue].",
+  "BIRDMOD-REFLECTION_POWER.smartDescription": "[gold]Your Reflection[/gold] draws [blue]7[/blue] cards every turn.\n[gold]Your Reflection[/gold] has a max energy of [blue]4[/blue].",
+  "BIRDMOD-REFLECTION_POWER.title": "It's You, Only Stronger",
+  
+  "BIRDMOD-DODGE_POWER.description": "Take 0 damage from the next enemy attack. Wears off at the start of your turn.",
+  "BIRDMOD-DODGE_POWER.smartDescription": "Take 0 damage from the next [blue]{Amount}[/blue] enemy {Amount:plural:attack|attacks}. Wears off at the start of your turn.",
+  "BIRDMOD-DODGE_POWER.title": "Dodge",
+  
+  "BIRDMOD-COUNTER_POWER.description": "When hit, deal damage back equal to the amount, then wears off.\n[font_size=14][i][color=#909090]Counter Art by Amayapolaris[/color][/i][/font_size]",
+  "BIRDMOD-COUNTER_POWER.smartDescription": "When hit, deal [blue]{Amount}[/blue] damage back, then wears off.\n[font_size=14][i][color=#909090]Counter Art by Amayapolaris[/color][/i][/font_size]",
+  "BIRDMOD-COUNTER_POWER.title": "Counter",
+  
+  "BIRDMOD-AWAIT_POWER.description": "At the end of the enemy's turn, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
+  "BIRDMOD-AWAIT_POWER.smartDescription": "At the end of the enemy's turn, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
+  "BIRDMOD-AWAIT_POWER.title": "Await",
+  
+  "BIRDMOD-READYING_POWER.description": "Gain [gold]Counter[/gold] equal to stack amount at the end of your turn.",
+  "BIRDMOD-READYING_POWER.smartDescription": "Gain [blue]{Amount}[/blue] [gold]Counter[/gold] at the end of your turn.",
+  "BIRDMOD-READYING_POWER.title": "Readying",
+  
+  "BIRDMOD-DRONE_SUPPORT_POWER.description": "Deal damage to all enemies at the end of your turn.",
+  "BIRDMOD-DRONE_SUPPORT_POWER.smartDescription": "Deal [blue]{Amount}[/blue] damage to all enemies at the end of your turn.",
+  "BIRDMOD-DRONE_SUPPORT_POWER.title": "Drone Support",
+  
+  "BIRDMOD-COUNTER_ALL_POWER.description": "When hit, deal damage back equal to the amount to ALL enemies, then wears off.",
+  "BIRDMOD-COUNTER_ALL_POWER.smartDescription": "When hit, deal [blue]{Amount}[/blue] damage to ALL enemies, then wears off.",
+  "BIRDMOD-COUNTER_ALL_POWER.title": "Counter All",
+  
+  "BIRDMOD-PACK_TACTICS_POWER.description": "At the end of your turn, [blue]1[/blue] random card in your [gold]Hand[/gold] is played against a random enemy.",
+  "BIRDMOD-PACK_TACTICS_POWER.smartDescription": "At the end of your turn, [blue]{Amount}[/blue] random {Amount:plural:card|cards} in your [gold]Hand[/gold] {Amount:plural:is played against a random enemy.|are played against a random enemy.}",
+  "BIRDMOD-PACK_TACTICS_POWER.title": "Pack Tactics",
+  
+  "BIRDMOD-STANCED_POWER.description": "Whenever you gain [gold]Counter[/gold], gain [gold]Block[/gold].",
+  "BIRDMOD-STANCED_POWER.smartDescription": "Whenever you gain [gold]Counter[/gold], gain {Amount} [gold]Block[/gold].",
+  "BIRDMOD-STANCED_POWER.title": "Stanced",
+  
+  "BIRDMOD-DRAW_LESS_NEXT_TURN_POWER.description": "Draw less cards next turn.",
+  "BIRDMOD-DRAW_LESS_NEXT_TURN_POWER.smartDescription": "Draw {Amount} less {Amount:plural:card|cards} next turn.",
+  "BIRDMOD-DRAW_LESS_NEXT_TURN_POWER.title": "Draw Reduction",
+  
+  "BIRDMOD-VIM_POWER.description": "Increases [gold]Block[/gold] gained from your next [gold]Block[/gold] card.\n[font_size=14][i][color=#909090]Vim Art by @.erebys[/color][/i][/font_size]",
+  "BIRDMOD-VIM_POWER.smartDescription": "{Amount:cond:<0?Decreases|Increases} [gold]Block[/gold] gained from your next [gold]Block[/gold] card by [blue]{Amount:abs()}[/blue].\n[font_size=14][i][color=#909090]Vim Art by @.erebys[/color][/i][/font_size]",
+  "BIRDMOD-VIM_POWER.title": "Vim",
+  
+  "BIRDMOD-EN_PASSANT_POWER.description": "Whenever you gain [gold]Block[/gold], gain [gold]Counter[/gold] equal to the amount of [gold]Block[/gold] gained that hits ALL enemies.",
+  "BIRDMOD-EN_PASSANT_POWER.smartDescription": "Whenever you gain [gold]Block[/gold], gain [gold]Counter[/gold] equal to {Amount:plural:|[blue]{}[/blue] times }the amount of [gold]Block[/gold] gained that hits ALL enemies.",
+  "BIRDMOD-EN_PASSANT_POWER.title": "En Passant",
+  
+  "BIRDMOD-AWAKENED_FORM_POWER.description": "Whenever you play a card, gain [gold]Dexterity[/gold] this turn.",
+  "BIRDMOD-AWAKENED_FORM_POWER.smartDescription": "Whenever you play a card, gain [blue]{Amount}[/blue] [gold]Dexterity[/gold] this turn.",
+  "BIRDMOD-AWAKENED_FORM_POWER.title": "Awakened Form",
+  
+  "BIRDMOD-ANCESTRAL_PROTECTION_POWER.description": "Whenever you gain [gold]Counter[/gold], ALL enemies lose [blue]1[/blue] [gold]Strength[/gold] this turn.",
+  "BIRDMOD-ANCESTRAL_PROTECTION_POWER.smartDescription": "Whenever you gain [gold]Counter[/gold], ALL enemies lose [blue]{Amount}[/blue] [gold]Strength[/gold] this turn.",
+  "BIRDMOD-ANCESTRAL_PROTECTION_POWER.title": "Ancestral Protection",
+  
+  "BIRDMOD-MOMENTUM_POWER.description": "Whenever you are hit, gain [gold]Dexterity[/gold] for one turn.",
+  "BIRDMOD-MOMENTUM_POWER.smartDescription": "Whenever you are hit, gain [blue]{Amount}[/blue] [gold]Dexterity[/gold] for one turn.",
+  "BIRDMOD-MOMENTUM_POWER.title": "Momentum",
+  
+  "BIRDMOD-FOREORDAIN_POWER.description": "In 3 turns, gain [blue]99[/blue] [gold]Dodge[/gold].",
+  "BIRDMOD-FOREORDAIN_POWER.smartDescription": "In {Amount} {Amount:plural:turn|turns}, gain [blue]99[/blue] [gold]Dodge[/gold].",
+  "BIRDMOD-FOREORDAIN_POWER.title": "Foreordain",
+
+  "BIRDMOD-UPGRADED_FOREORDAIN_POWER.description": "In 3 turns, gain [gold]Intangible[/gold]",
+  "BIRDMOD-UPGRADED_FOREORDAIN_POWER.smartDescription": "In {Amount} {Amount:plural:turn|turns}, gain [gold]Intangible[/gold].",
+  "BIRDMOD-UPGRADED_FOREORDAIN_POWER.title": "Foreordain+",
+  
+  "BIRDMOD-HARNESSING_ENERGY_POWER.description": "At the start of your turn, gain {energyPrefix:energyIcons(1)} and increase this gain by [blue]1[/blue].",
+  "BIRDMOD-HARNESSING_ENERGY_POWER.smartDescription": "At the start of your turn, gain {Energy:energyIcons()} and increase this gain by [blue]{Amount}[/blue].",
+  "BIRDMOD-HARNESSING_ENERGY_POWER.title": "Harnessing Energy",
+  
+  "BIRDMOD-SPRY_STEP_POWER.description": "Every [blue]20[/blue] [gold]Counter[/gold] you apply, gain {energyPrefix:energyIcons(1)}.",
+  "BIRDMOD-SPRY_STEP_POWER.smartDescription": "Every [blue]{BaseCounter}[/blue] [gold]Counter[/gold] you apply, gain {Amount:energyIcons()}.",
+  "BIRDMOD-SPRY_STEP_POWER.title": "Spry Step",
+  
+  "BIRDMOD-STAGGERING_POWER.description": "After taking attack damage a set amount of times, take more damage.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
+  "BIRDMOD-STAGGERING_POWER.smartDescription": "After taking attack damage [blue]{HitsLeft}[/blue] more {HitsLeft:plural:time|times}, takes [red]{Amount}[/red] additional damage.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
+  "BIRDMOD-STAGGERING_POWER.title": "Staggering",
+
+  "BIRDMOD-LIGHTFOOTED_POWER.description": "After gaining [gold]Block[/gold], gain [gold]Vigor[/gold].",
+  "BIRDMOD-LIGHTFOOTED_POWER.smartDescription": "After gaining [gold]Block[/gold], gain [blue]{Amount}[/blue] [gold]Vigor[/gold].",
+  "BIRDMOD-LIGHTFOOTED_POWER.title": "Lightfooted",
+
+  "BIRDMOD-HIGH_GROUND_POWER.description": "After [gold]Staggering[/gold] is triggered, gain [gold]Block[/gold].",
+  "BIRDMOD-HIGH_GROUND_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered, gain {Amount} [gold]Block[/gold].",
+  "BIRDMOD-HIGH_GROUND_POWER.title": "High Ground",
+
+  "BIRDMOD-GLIDING_POWER.description": "Take half damage from attacks for {Amount} {Amount:plural:turn|turns}.",
+  "BIRDMOD-GLIDING_POWER.smartDescription": "Take half damage from attacks for {Amount} {Amount:plural:turn|turns}.",
+  "BIRDMOD-GLIDING_POWER.title": "Gliding",
+  
+  "BIRDMOD-TAILWIND_POWER.description": "After [gold]Staggering[/gold] is triggered, draw a card.",
+  "BIRDMOD-TAILWIND_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered, draw {Amount} {Amount:plural:card|cards}.",
+  "BIRDMOD-TAILWIND_POWER.title": "Tailwind",
+
+  "BIRDMOD-SETUP_POWER.description": "After [gold]Staggering[/gold] is triggered, gain [gold]Counter[/gold] that hits ALL enemies.",
+  "BIRDMOD-SETUP_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered, gain {Amount} [gold]Counter[/gold] that hits ALL enemies.",
+  "BIRDMOD-SETUP_POWER.title": "Setup",
+
+  "BIRDMOD-CURBSTOMP_POWER.description": "After [gold]Staggering[/gold] is triggered on an enemy, that enemy loses [gold]Strength[/gold].",
+  "BIRDMOD-CURBSTOMP_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered on an enemy, that enemy loses [gold]Strength[/gold] equal to how many hits the [gold]Staggering[/gold] lasted times [blue]{Amount}[/blue].",
+  "BIRDMOD-CURBSTOMP_POWER.title": "Curbstomp",
+
+  "BIRDMOD-HIT_AND_RUN_POWER.description": "After [gold]Staggering[/gold] is triggered, gain [gold]Vim[/gold].",
+  "BIRDMOD-HIT_AND_RUN_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered, gain {Amount} [gold]Vim[/gold].",
+  "BIRDMOD-HIT_AND_RUN_POWER.title": "Hit and Run",
+
+  "BIRDMOD-GO_FERAL_POWER.description": "At the start of your turn, [gold]Transform[/gold] 1 card in your [gold]Hand[/gold] into a [gold]Talon[/gold] with [gold]Swift[/gold] [blue]1[/blue].",
+  "BIRDMOD-GO_FERAL_POWER.smartDescription": "At the start of your turn, [gold]Transform[/gold] {Amount} {Amount:plural:card|cards} in your [gold]Hand[/gold] into a [gold]Talon[/gold] with [gold]Swift[/gold] [blue]{Amount}[/blue].",
+  "BIRDMOD-GO_FERAL_POWER.title": "Go Feral",
+
+  "BIRDMOD-MIRROR_MOVE_POWER.description": "For the next [blue]1[/blue] card played by an ally, play a copy on the same target. If the target is the player themselves, play the copy on yourself instead.",
+  "BIRDMOD-MIRROR_MOVE_POWER.smartDescription": "For the next [blue]{Amount}[/blue] card{Amount:plural:|s} played by an ally, play a copy on the same target. If the target is the player themselves, play the copy on yourself instead.",
+  "BIRDMOD-MIRROR_MOVE_POWER.title": "Mirror Move",
+
+  "BIRDMOD-STORMFRONT_POWER.description": "When you gain [gold]Dexterity[/gold], all allies gain [gold]Dexterity[/gold] this turn equal to the amount of [gold]Dexterity[/gold] you gained.",
+  "BIRDMOD-STORMFRONT_POWER.smartDescription": "When you gain [gold]Dexterity[/gold], all allies gain [gold]Dexterity[/gold] this turn equal to {Amount:plural:|[blue]{}[/blue] times }the amount of [gold]Dexterity[/gold] you gained.",
+  "BIRDMOD-STORMFRONT_POWER.title": "Stormfront",
+
+  "BIRDMOD-AWAKEN_POWER.description": "The next time you die, don't.",
+  "BIRDMOD-AWAKEN_POWER.smartDescription": "The next {Amount:plural:time|[blue]{}[/blue] times} you die, don't.",
+  "BIRDMOD-AWAKEN_POWER.title": "Awakening"
+}

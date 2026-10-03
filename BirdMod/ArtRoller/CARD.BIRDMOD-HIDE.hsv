@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-HIDE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.26,
+  "green": 0.68,
+  "blue": 0.78,
+  "contrast": 1.3,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/dramatic_entrance.tres"
+}

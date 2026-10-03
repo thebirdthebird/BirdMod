@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-COUNTER",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.32,
+  "green": 0.79,
+  "blue": 0.71,
+  "contrast": 1.16,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/fight_me.tres"
+}

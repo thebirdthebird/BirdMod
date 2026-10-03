@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-SWIPE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.58,
+  "green": 0.61,
+  "blue": 0.24,
+  "contrast": 1.67,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/defect/scrape.tres"
+}

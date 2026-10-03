@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-LUNGE",
+  "hue": 1,
+  "saturation": 1.53,
+  "value": 0.47,
+  "red": 1.51,
+  "green": 1,
+  "blue": 1,
+  "contrast": 1.69,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/anger.tres"
+}

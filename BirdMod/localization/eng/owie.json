@@ -1,0 +1,37 @@
+﻿{
+  "BIRDMOD-0.big.0": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=16 connected=0]O-OWWW!!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.big.1": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=16 connected=0]SQUEAK!!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.big.2": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=16 connected=0]!!!!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.big.3": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=16 connected=0]--ACK!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.big.4": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=16 connected=0]HH!!![/shake][/color][/outline_color][/outline_size]",
+  
+  "BIRDMOD-0.small.0": "[outline_size=8][outline_color=white][color=#000000]O-Ow...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.small.1": "[outline_size=8][outline_color=white][color=#000000]S-Squeak...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.small.2": "[outline_size=8][outline_color=white][color=#000000]S-Stop...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.small.3": "[outline_size=8][outline_color=white][color=#000000]Ack...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-0.small.4": "[outline_size=8][outline_color=white][color=#000000]Hh...[/color][/outline_color][/outline_size]",
+
+  "BIRDMOD-1.big.0": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=12 connected=0]OW!!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.big.1": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=12 connected=0]SQUEAK!!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.big.2": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=12 connected=0]!!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.big.3": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=12 connected=0]ACK!![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.big.4": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=12 connected=0]Hhh![/shake][/color][/outline_color][/outline_size]",
+
+  "BIRDMOD-1.small.0": "[outline_size=8][outline_color=white][color=#000000]Ow...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.small.1": "[outline_size=8][outline_color=white][color=#000000]Squeak...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.small.2": "[outline_size=8][outline_color=white][color=#000000]Stop...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.small.3": "[outline_size=8][outline_color=white][color=#000000]Nn...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-1.small.4": "[outline_size=8][outline_color=white][color=#000000]...[/color][/outline_color][/outline_size]",
+
+  "BIRDMOD-2.big.0": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=8 connected=0]N-ngh![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.big.1": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=8 connected=0]N-No![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.big.2": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=8 connected=0]![/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.big.3": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=8 connected=0]--Aaa...[/shake][/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.big.4": "[outline_size=8][outline_color=white][color=#000000][shake rate=20.0 level=8 connected=0]...N-Not like this...[/shake][/color][/outline_color][/outline_size]",
+
+  "BIRDMOD-2.small.0": "[outline_size=8][outline_color=white][color=#000000]...Hmph.[/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.small.1": "[outline_size=8][outline_color=white][color=#000000]Y-You...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.small.2": "[outline_size=8][outline_color=white][color=#000000]H-hnh...[/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.small.3": "[outline_size=8][outline_color=white][color=#000000]You'll pay for that.[/color][/outline_color][/outline_size]",
+  "BIRDMOD-2.small.4": "[outline_size=8][outline_color=white][color=#000000]You'll regret that.[/color][/outline_color][/outline_size]"
+}

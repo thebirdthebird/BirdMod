@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-CONCENTRATE",
+  "hue": 1,
+  "saturation": 1.48,
+  "value": 1,
+  "red": 1.9,
+  "green": 0.77,
+  "blue": 0.69,
+  "contrast": 1.06,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/production.tres"
+}

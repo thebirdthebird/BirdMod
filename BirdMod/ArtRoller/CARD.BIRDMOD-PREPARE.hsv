@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-PREPARE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.34,
+  "green": 0.74,
+  "blue": 0.93,
+  "contrast": 1.34,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/tank.tres"
+}

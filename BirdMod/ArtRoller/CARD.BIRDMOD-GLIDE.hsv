@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-GLIDE",
+  "hue": 1,
+  "saturation": 0.93,
+  "value": 0.72,
+  "red": 1.57,
+  "green": 0.51,
+  "blue": 1,
+  "contrast": 1.39,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/event/byrd_swoop.tres"
+}

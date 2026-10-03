@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-HARNESSING_ENERGY",
+  "hue": 1,
+  "saturation": 1.26,
+  "value": 1,
+  "red": 1.52,
+  "green": 0.68,
+  "blue": 1,
+  "contrast": 1.52,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/necrobinder/devour_life.tres"
+}

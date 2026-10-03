@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-SHOVE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.41,
+  "green": 0.83,
+  "blue": 1.21,
+  "contrast": 1,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/coordinate.tres"
+}

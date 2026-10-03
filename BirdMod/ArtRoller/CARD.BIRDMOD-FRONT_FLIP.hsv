@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-FRONT_FLIP",
+  "hue": 1,
+  "saturation": 1.18,
+  "value": 0.74,
+  "red": 1.52,
+  "green": 0.61,
+  "blue": 1,
+  "contrast": 1,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/backflip.tres"
+}

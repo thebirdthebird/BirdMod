@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-ANCESTRAL_GUIDANCE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.44,
+  "green": 0.52,
+  "blue": 0.63,
+  "contrast": 1.57,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/necrobinder/wisp.tres"
+}

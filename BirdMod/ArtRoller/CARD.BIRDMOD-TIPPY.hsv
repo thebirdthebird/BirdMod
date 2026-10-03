@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-TIPPY",
+  "hue": 1,
+  "saturation": 1.34,
+  "value": 0.85,
+  "red": 1.54,
+  "green": 0.66,
+  "blue": 0.63,
+  "contrast": 1.14,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/dash.tres"
+}

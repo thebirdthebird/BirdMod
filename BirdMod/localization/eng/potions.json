@@ -1,0 +1,11 @@
+﻿{
+  "BIRDMOD-COUNTER_POTION.description": "Gain [blue]{CounterPower:diff()}[/blue] [gold]Counter[/gold].",
+  "BIRDMOD-COUNTER_POTION.title": "Shāpu",
+  "BIRDMOD-COUNTER_POTION.flavor": "Makes you feel all tingly on the outside.",
+  "BIRDMOD-STAGGERING_POTION.description": "Apply [blue]{StaggeringPower:diff()}[/blue] [gold]Staggering[/gold] that triggers in [blue]{StaggeringHits:diff()}[/blue] {StaggeringHits:plural:hit|hits}.",
+  "BIRDMOD-STAGGERING_POTION.title": "Destabilizer Brew",
+  "BIRDMOD-STAGGERING_POTION.flavor": "You're pretty sure it's just empty. Just throw the bottle at someone.",
+  "BIRDMOD-LEVITATION_POTION.description": "Gain [gold]Gliding[/gold].",
+  "BIRDMOD-LEVITATION_POTION.title": "Levitation Potion",
+  "BIRDMOD-LEVITATION_POTION.flavor": "[wave amp=40.0 freq=8.0 connected=0]Wwweeeeeeeeeeee!!![/wave]"
+}

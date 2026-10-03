@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-FLOURISH",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.95,
+  "green": 0.57,
+  "blue": 0.68,
+  "contrast": 1.33,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/cloak_and_dagger.tres"
+}

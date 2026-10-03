@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-WARN",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1.36,
+  "red": 0.61,
+  "green": 0.41,
+  "blue": 1.3,
+  "contrast": 1.4,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/anticipate.tres"
+}

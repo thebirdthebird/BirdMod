@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-FEATHER_DANCE",
+  "hue": 1,
+  "saturation": 0.6,
+  "value": 1,
+  "red": 1.47,
+  "green": 0.95,
+  "blue": 1.02,
+  "contrast": 1.59,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/grand_finale.tres"
+}
