@@ -23,13 +23,15 @@ public class GoFeral() : BirdModCard(3,
         ?
         [
             HoverTipFactory.Static(StaticHoverTip.Transform),
-            HoverTipFactory.FromCard<Talon>(),
+            // HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<Feather>(),
             .. HoverTipFactory.FromEnchantment<Swift>()
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-GO_FERAL.flavor")),
             HoverTipFactory.Static(StaticHoverTip.Transform),
-            HoverTipFactory.FromCard<Talon>(),
+            // HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<Feather>(),
             .. HoverTipFactory.FromEnchantment<Swift>()
         ];
 

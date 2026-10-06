@@ -16,7 +16,7 @@ public class Focus() : BirdModCard(1, CardType.Skill,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<VigorPower>(3m),
-        new PowerVar<VimPower>(3m)
+        new PowerVar<VimPower>(5m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
@@ -42,6 +42,6 @@ public class Focus() : BirdModCard(1, CardType.Skill,
     protected override void OnUpgrade()
     {
         base.DynamicVars["VigorPower"].UpgradeValueBy(2m);
-        base.DynamicVars["VimPower"].UpgradeValueBy(2m);
+        base.DynamicVars["VimPower"].UpgradeValueBy(3m);
     }
 }

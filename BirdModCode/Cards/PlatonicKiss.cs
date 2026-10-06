@@ -1,4 +1,5 @@
-﻿using BirdMod.BirdModCode.Cards;
+﻿using BaseLib.Audio;
+using BirdMod.BirdModCode.Cards;
 using BirdMod.BirdModCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -8,6 +9,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Nodes.Vfx;
 
 namespace BirdMod.BirdModCode.Cards;
 
@@ -49,6 +51,8 @@ public class PlatonicKiss() : BirdModCard(1,
         await PlayerCmd.GainEnergy(base.DynamicVars.Energy.IntValue, play.Target.Player);
         await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, play.Target.Player);
         await PowerCmd.Apply<PlatonicKissPower>(choiceContext, play.Target, base.DynamicVars["PlatonicKissPower"].BaseValue, oc, this);
+        TalkCmd.Play(new LocString("cards", "BIRDMOD-PLATONIC_KISS.talk"), oc, VfxColor.White, VfxDuration.VeryLong);
+        ModAudio.PlaySound(new ModSound("res://BirdMod/sounds/squeak.mp3"), 0f, 2f, 0.1f, 1f);
     }
 
     protected override void OnUpgrade()

@@ -31,7 +31,6 @@ public class TakeAdvantage() : BirdModCard(1,
         ];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
-        CardKeyword.Retain,
         CardKeyword.Exhaust
     ];
 

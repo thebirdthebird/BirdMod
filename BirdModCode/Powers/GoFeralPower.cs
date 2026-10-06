@@ -34,7 +34,7 @@ public class GoFeralPower() : BirdModPower
         List<CardModel> list = (await CardSelectCmd.FromHand(choiceContext, player, prefs, null, this)).ToList();
         foreach (CardModel item in list)
         {
-            var card = base.CombatState.CreateCard<Talon>(this.Owner.Player);
+            var card = base.CombatState.CreateCard<Feather>(this.Owner.Player);
             CardCmd.Enchant<Swift>(card, this.Amount);
             await CardCmd.Transform(item, card);
         }

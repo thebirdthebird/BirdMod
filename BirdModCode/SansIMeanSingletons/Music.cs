@@ -118,8 +118,15 @@ public class Music() : CustomSingletonModel(HookType.Combat)
         MainFile.Logger.Info("WE HAVE SET LOW TO " + low);
         if (low)
         {
-            MainFile.Logger.Info("Entering...");
-            Enter(ThreatTrack);
+            if (BirdModConfig.CloseToDeathMusic)
+            {
+                MainFile.Logger.Info("Entering...");
+                Enter(ThreatTrack);
+            }
+            else
+            {
+                MainFile.Logger.Info("PLAYER HAS CLOSE TO DEATH MUSIC DISABLED JGNSUGSUFHGISJHISH");
+            }
         }
         else
         {
