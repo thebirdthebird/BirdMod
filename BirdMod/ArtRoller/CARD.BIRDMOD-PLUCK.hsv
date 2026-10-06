@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-PLUCK",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.09,
+  "green": 0.59,
+  "blue": 0.84,
+  "contrast": 1.29,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/infernal_blade.tres"
+}

@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-CURBSTOMP",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.59,
+  "green": 0.59,
+  "blue": 0.33,
+  "contrast": 1.3,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/stomp.tres"
+}

@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-INCITE_VIOLENCE",
+  "hue": 1,
+  "saturation": 1,
+  "value": 2,
+  "red": 2,
+  "green": 0,
+  "blue": 0,
+  "contrast": 2,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/believe_in_you.tres"
+}

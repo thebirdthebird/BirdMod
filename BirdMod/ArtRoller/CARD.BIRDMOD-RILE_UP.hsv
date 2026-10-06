@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-RILE_UP",
+  "hue": 0.57,
+  "saturation": 0.85,
+  "value": 0.88,
+  "red": 1.8,
+  "green": 0.9,
+  "blue": 0.86,
+  "contrast": 1.45,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/colorless/beacon_of_hope.tres"
+}

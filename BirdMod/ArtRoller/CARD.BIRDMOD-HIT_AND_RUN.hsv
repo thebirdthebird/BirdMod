@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-HIT_AND_RUN",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1.27,
+  "red": 1.66,
+  "green": 0.67,
+  "blue": 0.6,
+  "contrast": 1.49,
+  "flip_h": false,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/silent/calculated_gamble.tres"
+}

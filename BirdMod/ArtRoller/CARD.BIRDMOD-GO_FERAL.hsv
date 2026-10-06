@@ -1,0 +1,12 @@
+{
+  "card_id": "CARD.BIRDMOD-GO_FERAL",
+  "hue": 1,
+  "saturation": 1,
+  "value": 1,
+  "red": 1.95,
+  "green": 0.46,
+  "blue": 0.52,
+  "contrast": 1.38,
+  "flip_h": true,
+  "portrait_path": "res://images/atlases/card_atlas.sprites/ironclad/tear_asunder.tres"
+}
