@@ -15,14 +15,26 @@ public class AwaitPower() : BirdModPower
         PowerType.Buff;
 
     public override PowerStackType StackType =>
-        PowerStackType.Single;
+        PowerStackType.Counter;
+    
+    private int AAAA = 0;
 
-    public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
-        if (((int)side == 2 && Owner.IsPlayer) || ((int)side == 1 && !Owner.IsPlayer))
+        if (!participants.Contains<Creature>(this.Owner))
+            return;
+        await PowerCmd.Apply<CounterPower>(new BlockingPlayerChoiceContext(), base.Owner, AAAA, base.Owner, null);
+        await PowerCmd.Decrement((PowerModel) this);
+    }   
+    
+
+    public override Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+    {
+        if ((side == CombatSide.Enemy && Owner.IsPlayer) || (side == CombatSide.Player && !Owner.IsPlayer))
         {
-            await PowerCmd.Apply<CounterPower>(choiceContext, base.Owner, base.Owner.Block, base.Owner, null);
-            await PowerCmd.Remove((PowerModel) this);
+            AAAA = Owner.Block;
         }
+        return base.BeforeSideTurnEnd(choiceContext, side, participants);
     }
+    
 }

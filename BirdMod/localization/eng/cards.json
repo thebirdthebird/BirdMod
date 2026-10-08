@@ -54,7 +54,7 @@
   "BIRDMOD-PARRY.description": "Gain {DodgePower:diff()} [gold]Dodge[/gold] and {CounterPower:diff()} [gold]Counter[/gold].",
   "BIRDMOD-PARRY.title": "Parry",
   "BIRDMOD-PARRY.flavor": "Placeholder.",
-  "BIRDMOD-READYING.description": "At the end of your turn, gain {ReadyingPower:diff()} [gold]Counter[/gold].",
+  "BIRDMOD-READYING.description": "At the start of your turn, gain {ReadyingPower:diff()} [gold]Counter[/gold].",
   "BIRDMOD-READYING.title": "Readying",
   "BIRDMOD-READYING.flavor": "Placeholder.",
   "BIRDMOD-DRONE_SUPPORT.description": "Deal {DroneSupportPower:diff()} damage to all enemies at the end of your turn.",

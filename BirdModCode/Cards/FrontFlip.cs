@@ -27,11 +27,10 @@ public class FrontFlip() : BirdModCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 
         ?
         [
-            HoverTipFactory.FromPower<StaggeringPower>()
+            
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-FRONT_FLIP.flavor")),
-            HoverTipFactory.FromPower<StaggeringPower>()
         ];
 
     public override async Task SuperPlay(

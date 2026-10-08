@@ -15,11 +15,13 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Entities.UI;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Modding;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Encounters.Mocks;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -27,7 +29,11 @@ using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Cards;
+using MegaCrit.Sts2.Core.Nodes.Cards.Holders;
+using MegaCrit.Sts2.Core.Nodes.Combat;
+using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.Nodes.GodotExtensions;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx.Cards;
 using MegaCrit.Sts2.Core.Random;
 using MegaCrit.Sts2.Core.Runs;
@@ -55,7 +61,62 @@ public class ReflectionEnemy : CustomMonsterModel
     public int CardsToDraw = 7;
     public bool Panic = false;
     
-    
+    public List<NGridCardHolder?> NCardHolders = new List<NGridCardHolder?>();
+    public static float CardIntentY = -115f;
+
+    public void GenerateCardIntentVisuals()
+    {
+	    if (NCombatRoom.Instance != null)
+	    {
+		    NCreature? creatureNode = NCombatRoom.Instance.GetCreatureNode(Creature);
+		    Marker2D? specialNode = creatureNode?.GetSpecialNode<Marker2D>("%IntentPos");
+		    if (specialNode != null)
+		    {
+			    int i = 0;
+			    for (i = 0; i < CardsToPlay.Count; i++)
+			    {
+				    var card = CardsToPlay[i];
+				    NCard? nCard = NCard.Create(card);
+				    nCard!.Scale = new Vector2(0.25f, 0.25f);
+				    NGridCardHolder? nCardHolder = NGridCardHolder.Create(nCard!);
+				    nCard!.UpdateVisuals(PileType.None, CardPreviewMode.Normal);
+				    NCardHolders.Add(nCardHolder);
+				    specialNode.AddChildSafely(nCardHolder);
+				    // nCardHolder.Position = positionOffsetSetToUse[i];
+				    // ReSharper disable once PossibleLossOfFraction
+				    nCardHolder!.Position =
+					    new Vector2(
+						    (float)((-60) * (CardsToPlay.Count + PseudoHand.Count - 1) / 2) +
+						    ((i - 1) * 60), CardIntentY);
+				    nCardHolder.ReassignToCard(card, PileType.None, null, ModelVisibility.Visible);
+				    nCardHolder.Show();
+			    }
+			    i = CardsToPlay.Count;
+			    for (int j = 0; j < PseudoHand.Count; j++)
+			    {
+				    var card = PseudoHand[j];
+				    NCard? nCard = NCard.Create(card);
+				    nCard!.Scale = new Vector2(0.25f, 0.25f);
+				    NGridCardHolder? nCardHolder = NGridCardHolder.Create(nCard!);
+				    nCard!.UpdateVisuals(PileType.Hand, CardPreviewMode.Normal);
+				    NCardHolders.Add(nCardHolder);
+				    specialNode.AddChildSafely(nCardHolder);
+				    // nCardHolder.Position = positionOffsetSetToUse[i];
+				    // ReSharper disable once PossibleLossOfFraction
+				    nCardHolder!.Position =
+					    new Vector2(
+						    (float)((-60) * (CardsToPlay.Count + PseudoHand.Count - 1) / 2) +
+						    ((i - 1) * 60), CardIntentY);
+				    nCardHolder.ReassignToCard(card, PileType.Hand, null, ModelVisibility.Visible);
+				    nCardHolder.Modulate = new Color(0.4f, 0.4f, 0.4f, 0.7f);
+				    nCardHolder.Show();
+				    i++;
+			    }
+		    }
+	    }
+    }
+
+
     public override async Task AfterAddedToRoom()
     {
 	    await base.AfterAddedToRoom();
@@ -403,10 +464,12 @@ public class ReflectionEnemy : CustomMonsterModel
 	    MainFile.Logger.Info("ReflectionEnemy: Hand at StartOfTurn: " + string.Join(", ", PseudoHand.Select(c => c.Title)));
 	    MainFile.Logger.Info("ReflectionEnemy: Deck at StartOfTurn: " + string.Join(", ", PseudoDeck.Select(c => c.Title)));
 	    MainFile.Logger.Info("ReflectionEnemy: Discard at StartOfTurn: " + string.Join(", ", PseudoDiscard.Select(c => c.Title)));
-
+	    
 	    var move = AreYouReadyToRUMBLEEEE();
 	    move.FollowUpState = new MoveState("EMPTY_MOVE", EmptyMove);
 	    SetMoveImmediate(move, true);
+
+	    GenerateCardIntentVisuals();
     }
 
     public override async Task AfterSideTurnEnd(
@@ -435,7 +498,13 @@ public class ReflectionEnemy : CustomMonsterModel
 		    MainFile.Logger.Info("ReflectionEnemy: Deck at EndOfTurnStep " + i + " is " + string.Join(", ", PseudoDeck.Select(c => c.Title)));
 		    MainFile.Logger.Info("ReflectionEnemy: Discard at EndOfTurnStep " + i + " is " + string.Join(", ", PseudoDiscard.Select(c => c.Title)));
 		    j += 1;
+	    }	
+
+	    foreach (var n in NCardHolders)
+	    {
+		    n?.QueueFree();
 	    }
+	    NCardHolders.Clear();
     }
 
     public async Task PlayHand(IReadOnlyList<Creature> targets)

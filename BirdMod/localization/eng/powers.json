@@ -19,12 +19,12 @@
   "BIRDMOD-COUNTER_POWER.smartDescription": "When hit, deal [blue]{Amount}[/blue] damage back, then wears off.\n[font_size=14][i][color=#909090]Counter Art by Amayapolaris[/color][/i][/font_size]",
   "BIRDMOD-COUNTER_POWER.title": "Counter",
   
-  "BIRDMOD-AWAIT_POWER.description": "At the end of the enemy's turn, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
-  "BIRDMOD-AWAIT_POWER.smartDescription": "At the end of the enemy's turn, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
+  "BIRDMOD-AWAIT_POWER.description": "At the start of your turn, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
+  "BIRDMOD-AWAIT_POWER.smartDescription": "At the start of your turn {Amount:plural:|for {} turns}, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
   "BIRDMOD-AWAIT_POWER.title": "Await",
   
-  "BIRDMOD-READYING_POWER.description": "Gain [gold]Counter[/gold] equal to stack amount at the end of your turn.",
-  "BIRDMOD-READYING_POWER.smartDescription": "Gain [blue]{Amount}[/blue] [gold]Counter[/gold] at the end of your turn.",
+  "BIRDMOD-READYING_POWER.description": "Gain [gold]Counter[/gold] equal to stack amount at the start of your turn.",
+  "BIRDMOD-READYING_POWER.smartDescription": "Gain [blue]{Amount}[/blue] [gold]Counter[/gold] at the start of your turn.",
   "BIRDMOD-READYING_POWER.title": "Readying",
   
   "BIRDMOD-DRONE_SUPPORT_POWER.description": "Deal damage to all enemies at the end of your turn.",
