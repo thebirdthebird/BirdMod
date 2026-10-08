@@ -42,8 +42,13 @@ public class ReflectionBossEncounter() : CustomEncounterModel(RoomType.Boss)
     }
     public override bool IsValidForAct(ActModel act)
     {
-        //return false;
-        return act.ActNumber() == 3 && RunManager.Instance.DebugOnlyGetState().Players.Any((Player p) => p.Character is Character.BirdMod);
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once IdentifierTypo
+        var OHMYGODFUCKYOUSTUPIDCODE = RunManager.Instance.DebugOnlyGetState();
+        if (OHMYGODFUCKYOUSTUPIDCODE == null)
+            return act.ActNumber() == 3;
+        return act.ActNumber() == 3 &&
+               OHMYGODFUCKYOUSTUPIDCODE.Players.Any((Player p) => p.Character is Character.BirdMod);
     }
     
     //public override string CustomBgm => "res://BirdMod/music/CrimsonTalons.ogg"; //doesnt work
