@@ -24,7 +24,7 @@ public class ImbueEvent : CustomEventModel
     public override bool IsAllowed(IRunState runState)
     {
         //return false;
-        return runState.Players.All((Player p) => p.Character is Character.BirdMod);
+        return runState.Players.Any((Player p) => p.Character is Character.BirdMod);
     }
 
     protected override IReadOnlyList<EventOption> GenerateInitialOptions() =>

@@ -29,6 +29,7 @@ public class Tailshake() : BirdModCard(1,
         ] :
     [
         new HoverTip(new LocString("cards", "BIRDMOD-TAILSHAKE.flavor")),
+        new HoverTip(new LocString("cards", "BIRDMOD-TAILSHAKE.credits")),
         HoverTipFactory.FromPower<VimPower>(),
         HoverTipFactory.FromPower<StrengthPower>()
     ];

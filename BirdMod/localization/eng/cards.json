@@ -42,6 +42,7 @@
   "BIRDMOD-TAILSHAKE.description": "Gain {VimPower:diff()} [gold]Vim[/gold].\nAll enemies lose {DarkShacklesPower:diff()} [gold]Strength[/gold] this turn.",
   "BIRDMOD-TAILSHAKE.title": "Tailshake",
   "BIRDMOD-TAILSHAKE.flavor": "Yes, the negative Vim is intentional.",
+  "BIRDMOD-TAILSHAKE.credits": "Art by [gold]Amayapolaris[/gold]",
   "BIRDMOD-AWAIT.description": "Gain {Block:diff()} [gold]Block[/gold].\nNext turn, gain [gold]Counter[/gold] equal to your unused [gold]Block[/gold].",
   "BIRDMOD-AWAIT.title": "Await",
   "BIRDMOD-AWAIT.flavor": "Placeholder.",

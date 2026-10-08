@@ -4,6 +4,7 @@ using BirdMod.BirdModCode.Monsters;
 using Godot;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Encounters;
@@ -42,7 +43,7 @@ public class ReflectionBossEncounter() : CustomEncounterModel(RoomType.Boss)
     public override bool IsValidForAct(ActModel act)
     {
         //return false;
-        return act.ActNumber() == 3;
+        return act.ActNumber() == 3 && RunManager.Instance.DebugOnlyGetState().Players.Any((Player p) => p.Character is Character.BirdMod);
     }
     
     //public override string CustomBgm => "res://BirdMod/music/CrimsonTalons.ogg"; //doesnt work

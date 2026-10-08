@@ -3,7 +3,7 @@
   "name": "The Bird Mod",
   "author": "Anonymous",
   "description": "Slay the Spire 2 character mod created from a template for use with BaseLib",
-  "version": "v0.3.0023",
+  "version": "v0.3.0024",
   "min_game_version": "0.107.0",
   "has_pck": true,
   "has_dll": true,
