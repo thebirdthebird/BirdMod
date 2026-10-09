@@ -62,7 +62,8 @@ public class ReflectionEnemy : CustomMonsterModel
     public bool Panic = false;
     
     public List<NGridCardHolder?> NCardHolders = new List<NGridCardHolder?>();
-    public static float CardIntentY = -115f;
+    public static float CardIntentY = -115f + 50f;
+    public static float cX = (60 + (28));
 
     public void GenerateCardIntentVisuals()
     {
@@ -77,7 +78,7 @@ public class ReflectionEnemy : CustomMonsterModel
 			    {
 				    var card = CardsToPlay[i];
 				    NCard? nCard = NCard.Create(card);
-				    nCard!.Scale = new Vector2(0.25f, 0.25f);
+				    // nCard!.Scale = new Vector2(0.25f, 0.25f);
 				    NGridCardHolder? nCardHolder = NGridCardHolder.Create(nCard!);
 				    nCard!.UpdateVisuals(PileType.None, CardPreviewMode.Normal);
 				    NCardHolders.Add(nCardHolder);
@@ -86,8 +87,8 @@ public class ReflectionEnemy : CustomMonsterModel
 				    // ReSharper disable once PossibleLossOfFraction
 				    nCardHolder!.Position =
 					    new Vector2(
-						    (float)((-60) * (CardsToPlay.Count + PseudoHand.Count - 1) / 2) +
-						    ((i - 1) * 60), CardIntentY);
+						    (float)((-cX) * (CardsToPlay.Count + PseudoHand.Count - 1) / 2) +
+						    ((i - 1) * cX) - (cX * 4), CardIntentY);
 				    nCardHolder.ReassignToCard(card, PileType.None, null, ModelVisibility.Visible);
 				    nCardHolder.Show();
 			    }
@@ -96,7 +97,7 @@ public class ReflectionEnemy : CustomMonsterModel
 			    {
 				    var card = PseudoHand[j];
 				    NCard? nCard = NCard.Create(card);
-				    nCard!.Scale = new Vector2(0.25f, 0.25f);
+				    // nCard!.Scale = new Vector2(0.25f, 0.25f);
 				    NGridCardHolder? nCardHolder = NGridCardHolder.Create(nCard!);
 				    nCard!.UpdateVisuals(PileType.Hand, CardPreviewMode.Normal);
 				    NCardHolders.Add(nCardHolder);
@@ -105,8 +106,8 @@ public class ReflectionEnemy : CustomMonsterModel
 				    // ReSharper disable once PossibleLossOfFraction
 				    nCardHolder!.Position =
 					    new Vector2(
-						    (float)((-60) * (CardsToPlay.Count + PseudoHand.Count - 1) / 2) +
-						    ((i - 1) * 60), CardIntentY);
+						    (float)((-cX) * (CardsToPlay.Count + PseudoHand.Count - 1) / 2) +
+						    ((i - 1) * cX) - (cX * 4), CardIntentY);
 				    nCardHolder.ReassignToCard(card, PileType.Hand, null, ModelVisibility.Visible);
 				    nCardHolder.Modulate = new Color(0.4f, 0.4f, 0.4f, 0.7f);
 				    nCardHolder.Show();
@@ -516,6 +517,12 @@ public class ReflectionEnemy : CustomMonsterModel
 	    {
 		    await FalseOnPlayWrapper(new ThrowingPlayerChoiceContext(), Creature, false, default, list[i], false);
 		    CardsToPlay.RemoveAt(0);
+		    foreach (var n in NCardHolders)
+		    {
+			    n?.QueueFree();
+		    }
+		    NCardHolders.Clear();
+		    GenerateCardIntentVisuals();
 		    /*
 		    if (list[i].Type != CardType.Power && !list[i].Keywords.Contains(CardKeyword.Exhaust))
 		    {
@@ -545,18 +552,19 @@ public class ReflectionEnemy : CustomMonsterModel
         idkWhatImDoing.AfterCreated();
         idkWhatImDoing.Owner = null!;
         idkWhatImDoing.AssertMutable();
+        idkWhatImDoing.HELP = true;
         // ICombatState .. doesnt have a way to keep track of cards.,, cant make ,..
         return idkWhatImDoing;
     }
     
     public BirdModCard PseudoCreateAlt(BirdModCard card)
     {
-	    MainFile.Logger.Info("CARD IS " + card);
 	    BirdModCard? idkWhatImDoing = card.ToMutable() as BirdModCard;
 	    if (idkWhatImDoing == null) return new Snowgrave();
 	    idkWhatImDoing.AfterCreated();
 	    idkWhatImDoing.Owner = null!;
 	    idkWhatImDoing.AssertMutable();
+	    idkWhatImDoing.HELP = true;
 	    // ICombatState .. doesnt have a way to keep track of cards.,, cant make ,..
 	    return idkWhatImDoing;
     }

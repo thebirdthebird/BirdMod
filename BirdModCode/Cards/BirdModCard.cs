@@ -24,6 +24,8 @@ public abstract class BirdModCard(int cost, CardType type, CardRarity rarity, Ta
     CustomCardModel(cost, type, rarity, target)
 {
 
+    public bool HELP = false;
+
     // helper method to grab the tip
     public HoverTip FlavorTip()
     {
