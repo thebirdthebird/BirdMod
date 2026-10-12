@@ -342,7 +342,7 @@ public class ReflectionEnemy : CustomMonsterModel
 			    continue; // too expensive nerd
 		    }
 		    
-		    if (PseudoHand[i].Type == CardType.Power && rng.NextInt(0, CardsToPlay.Count+1) > 1) // hello my name is the bird and i prioritize playing powers
+		    if (PseudoHand[i].Type == CardType.Power && rng.NextInt(0, CardsToPlay.Count+1) < 1) // hello my name is the bird and i prioritize playing powers
 		    {
 			    Play(i, false);
 			    i -= 1;

@@ -29,26 +29,17 @@ public class ImbueEvent : CustomEventModel
 
     protected override IReadOnlyList<EventOption> GenerateInitialOptions() =>
     [
-        Option(Plain).ThatDoesDamage(DynamicVars.HpLoss.IntValue),
+        Option(Plain),
         Option(Ornate, HoverTipFactory.FromCardWithCardHoverTips<Imbue>())
     ];
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new HpLossVar(12),
-        new GoldVar(0),
         new StringVar("Quest", ModelDb.Card<Imbue>().Title)
     ];
-
-    public override void CalculateVars()
-    {
-        DynamicVars.Gold.BaseValue = Rng.NextInt(74, 123);
-    }
     
     public async Task Plain()
     {
-        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner!.Creature, DynamicVars.HpLoss.IntValue, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
-        await PlayerCmd.GainGold(DynamicVars.Gold.IntValue, Owner);
         SetEventFinished(PageDescription("PLAIN"));
     }
 

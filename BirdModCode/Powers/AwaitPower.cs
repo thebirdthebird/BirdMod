@@ -25,8 +25,7 @@ public class AwaitPower() : BirdModPower
             return;
         await PowerCmd.Apply<CounterPower>(new BlockingPlayerChoiceContext(), base.Owner, AAAA, base.Owner, null);
         await PowerCmd.Decrement((PowerModel) this);
-    }   
-    
+    }
 
     public override Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {

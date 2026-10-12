@@ -18,7 +18,7 @@ namespace BirdMod.BirdModCode.Cards;
   
 public class Scratch() : BirdModCard(2,
     CardType.Attack, CardRarity.Basic,
-    TargetType.AnyEnemy)
+    TargetType.AnyEnemy), ITranscendenceCard
 {
     public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<TearToShreds>();
     

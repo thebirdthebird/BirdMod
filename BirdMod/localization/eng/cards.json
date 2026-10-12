@@ -76,7 +76,7 @@
   "BIRDMOD-PACK_TACTICS.flavor": "[green]\"Hey, don't sweat it!\"[/green]\n[blue]\"No matter what happens, we're right behind you.\"[/blue]\n[red]\"We've got each other's backs, right?\"[/red]\n[green]\"It's[/green] [blue]what[/blue] [red]it[/red] [green]means[/green] [blue]to[/blue] [red]be[/red] [green]part[/green] [blue]of[/blue] [red]this[/red] [shake rate=20.0 level=8 connected=0][outline_size=8][outline_color=dark_orange]tribe.\"[/outline_color][/outline_size][/shake]",
   "BIRDMOD-INSTINCT.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
   "BIRDMOD-INSTINCT.title": "Instinct",
-  "BIRDMOD-INSTINCT.flavor": "[shake rate=20.0 level=8 connected=0][outline_size=8][outline_color=dark_orange]Remember your training.[/outline_color][/outline_size][/shake]",
+  "BIRDMOD-INSTINCT.flavor": "[shake rate=20.0 level=8 connected=0][outline_size=8][outline_color=dark_orange]\"Remember your training.\"[/outline_color][/outline_size][/shake]",
   "BIRDMOD-CUT.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nGain [gold]Counter[/gold] equal to damage dealt.",
   "BIRDMOD-CUT.title": "Cut",
   "BIRDMOD-CUT.flavor": "Placeholder.",
@@ -174,7 +174,7 @@
   "BIRDMOD-CONCENTRATE.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Focus! Concentrate! *starts beat boxing*\"[/color][/outline_color][/outline_size]",
   "BIRDMOD-DORMANT_DAGGER.description": "Deal {Damage:diff()} damage.\nAfter {Kills:diff()} more [gold]Fatal[/gold] {Kills:plural:kill|kills}, transforms after combat.",
   "BIRDMOD-DORMANT_DAGGER.title": "Dormant Dagger",
-  "BIRDMOD-DORMANT_DAGGER.flavor": "[outline_size=8][outline_color=white][color=#000000]\"W-Why do I... feel like this dagger is... [wave amp=40.0 freq=8.0 connected=0]familiar[/wave], somehow?\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-DORMANT_DAGGER.flavor": "[outline_size=8][outline_color=white][color=#000000]\"This... f-feels so... [wave amp=40.0 freq=8.0 connected=0]right[/wave].\nI'll make my Ancestors proud.\"[/color][/outline_color][/outline_size]",
   "BIRDMOD-DORMANT_DAGGER.credits": "Art by [gold]Pondm1[/gold]",
   "BIRDMOD-AWAKENED_DAGGER.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
   "BIRDMOD-AWAKENED_DAGGER.title": "Awakened Dagger",
@@ -290,9 +290,10 @@
   "BIRDMOD-QUICK_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {Energy:energyIcons()} if you gained [gold]Counter[/gold] this turn.",
   "BIRDMOD-QUICK_STRIKE.title": "Quick Strike",
   "BIRDMOD-QUICK_STRIKE.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Tricked you.\"[/color][/outline_color][/outline_size]",
-  "BIRDMOD-GO_PRIMAL.description": "Add {Cards:diff()} [gold]Talon[/gold] {Cards:plural:card|cards} enchanted with [blue]Swift[/blue] {Swift:diff()} to your [gold]Draw Pile[/gold].\n[gold]Exhaustive[/gold] {Exhaustive:diff()}.",
-  "BIRDMOD-GO_PRIMAL.title": "Go Primal",
-  "BIRDMOD-GO_PRIMAL.flavor": "[font_size=32][outline_size=8][outline_color=white][color=#000000]\"It's the [shake rate=40.0 level=20 connected=0]LAW[/shake].\"[/color][/outline_color][/outline_size][/font_size]",
+  "BIRDMOD-GO_PRIMAL.descriptionOLD": "Add {Cards:diff()} [gold]Talon[/gold] {Cards:plural:card|cards} enchanted with [blue]Swift[/blue] {Swift:diff()} to your [gold]Draw Pile[/gold].\n[gold]Exhaustive[/gold] {Exhaustive:diff()}.",
+  "BIRDMOD-GO_PRIMAL.description": "Add {Cards:diff()} [gold]{Cards:plural:Talon|Talons}[/gold] enchanted with [blue]Swift[/blue] {Swift:diff()} to your [gold]Hand[/gold].\nIncrease this card's cost by 1.",
+  "BIRDMOD-GO_PRIMAL.title": "Lose Yourself",
+  "BIRDMOD-GO_PRIMAL.flavor": "[outline_size=8][outline_color=white][color=#000000]\"The voices... of the Ancestors... they're so [jitter]LOUD[/jitter]...\"[/color][/outline_color][/outline_size]",
   "BIRDMOD-TALON_OUTBURST.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nIncrease the amount of hits of ALL Talon cards by {Increase:diff()} this combat.",
   "BIRDMOD-TALON_OUTBURST.title": "Talon Outburst",
   "BIRDMOD-TALON_OUTBURST.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
@@ -339,8 +340,10 @@
   "BIRDMOD-AWAKEN.description": "The next time target player dies, they don't.",
   "BIRDMOD-AWAKEN.title": "Awaken",
   "BIRDMOD-AWAKEN.flavor": "[outline_size=8][outline_color=white][color=#000000]\"May the Ancestors guide us, protect us, and bless us.\"[/color][/outline_color][/outline_size]",
-  
-  
+
+  "BIRDMOD-SPIRIT_SUMMON.description": "Summon a Spirit.\nTesting.",
+  "BIRDMOD-SPIRIT_SUMMON.title": "Spirit Summon",
+  "BIRDMOD-SPIRIT_SUMMON.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
   
   
   

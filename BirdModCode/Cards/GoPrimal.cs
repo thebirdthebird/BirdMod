@@ -1,4 +1,5 @@
-﻿using BaseLib.Cards.Variables;
+﻿using BaseLib.Abstracts;
+using BaseLib.Cards.Variables;
 using BirdMod.BirdModCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,14 +14,18 @@ using MegaCrit.Sts2.Core.Models.Enchantments;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class GoPrimal() : BirdModCard(0,
-    CardType.Skill, CardRarity.Event,
-    TargetType.Self)
+public class GoPrimal() : BirdModCard(1,
+    CardType.Skill, CardRarity.Ancient,
+    TargetType.Self), ITomeCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CardsVar(2),
+        new CardsVar(1),
         new IntVar("Swift", 2m),
-        new ExhaustiveVar(2)
+        // new ExhaustiveVar(2)
+    ];
+    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Ethereal
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
@@ -47,16 +52,18 @@ public class GoPrimal() : BirdModCard(0,
         {
             talons.Add(CombatState.CreateCard<Talon>(Owner));
         }
-        foreach (var item in await CardPileCmd.AddGeneratedCardsToCombat(talons, PileType.Draw, Owner))
+        foreach (var item in await CardPileCmd.AddGeneratedCardsToCombat(talons, PileType.Hand, Owner))
         {
             CardCmd.Enchant<Swift>(item.cardAdded, DynamicVars["Swift"].IntValue);
             CardCmd.PreviewCardPileAdd(item);
         }
+        base.EnergyCost.AddThisCombat(1);
     }
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Cards.UpgradeValueBy(1m);
+        // base.DynamicVars.Cards.UpgradeValueBy(1m);
+        base.RemoveKeyword(CardKeyword.Ethereal);
         base.DynamicVars["Swift"].UpgradeValueBy(1m);
     }
 }

@@ -129,5 +129,9 @@
 
   "BIRDMOD-AWAKEN_POWER.description": "The next time you die, don't.",
   "BIRDMOD-AWAKEN_POWER.smartDescription": "The next {Amount:plural:time|[blue]{}[/blue] times} you die, don't.",
-  "BIRDMOD-AWAKEN_POWER.title": "Awakening"
+  "BIRDMOD-AWAKEN_POWER.title": "Awakening",
+
+  "BIRDMOD-SPIRIT_SUMMON_POWER.description": "Plays cards at the end of the Player turn.\nHas [blue]2[/blue] Max Energy and draws [blue]4[/blue] cards per turn.\nAny [gold]Block[/gold] or Power gained is also applied to you.",
+  "BIRDMOD-SPIRIT_SUMMON_POWER.smartDescription": "Plays cards at the end of the Player turn.\nHas [blue]2[/blue] Max Energy and draws [blue]4[/blue] cards per turn.\nAny [gold]Block[/gold] or Power gained is also applied to you.",
+  "BIRDMOD-SPIRIT_SUMMON_POWER.title": "Spirit Summon"
 }

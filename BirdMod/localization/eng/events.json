@@ -4,19 +4,27 @@
   "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.ORNATE.title": "Take the Dagger",
   "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.PLAIN.description": "Lose [red]{HpLoss}[/red] HP. Gain [blue]{Gold}[/blue] [gold]Gold[/gold].",
   "BIRDMOD-DAGGER_EVENT.pages.INITIAL.options.PLAIN.title": "Sacrifice",
-  "BIRDMOD-DAGGER_EVENT.pages.ORNATE.description": "Yoinked the dagger.",
-  "BIRDMOD-DAGGER_EVENT.pages.PLAIN.description": "You sacrificed your hp for money.",
-  "BIRDMOD-DAGGER_EVENT.title": "Dagger Test Event",
-  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.description": "You test dagger. You can choose to take the dagger or sacrifice hp for money.\n\n\nTHIS WILL BE COMPLETED LATER. IM SORRY.",
+  "BIRDMOD-DAGGER_EVENT.pages.ORNATE.description": "You took the dagger, twirling it in your talons.\nYou would make your [shake rate=20.0 level=8 connected=0][outline_size=8][outline_color=dark_orange]Ancestors[/outline_color][/outline_size][/shake] proud.",
+  "BIRDMOD-DAGGER_EVENT.pages.PLAIN.description": "You shut your eyes, and with a sharp intake of breath, you gave some of your blood to the basin.\n\nLeaving the Dagger behind, you continue on your way. As you go to leave, though, your foot strikes a rock, and you let out a squeak.\nThe rock had been pushed aside, and underneath it was...\n\n[jitter][gold]MONEY!!![/gold][/jitter]",
+  "BIRDMOD-DAGGER_EVENT.title": "Ruined Ritual Site",
+  "BIRDMOD-DAGGER_EVENT.pages.INITIAL.description": "You stumble upon what looks like...\n[jitter]Oh.[/jitter]\nIt looks like... one of your tribe's ritual sites, from outside the Spire, but...\n[sine]Why would it be here? And... why is it...[/sine] [red]destroyed?[/red]\n\nYou knowingly search the Ritual site, and come upon the Dagger you [jitter]knew[/jitter] would be hidden underneath a basin, as cracked and toppled it may be.\n\n\nYou could preform a small ritual yourself, for good fortune, or take the Dagger with you... potentially [sine]empowering[/sine] it?",
+  
+  
   "BIRDMOD-IMBUE_EVENT.loss": "{character} [sine]sacrificed[/sine] {pronounObject}self.",
   "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.ORNATE.description": "Add [orange]{Quest}[/orange] to your [gold]Deck[/gold].",
-  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.ORNATE.title": "Take the Imbue",
-  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.PLAIN.description": "Lose [red]{HpLoss}[/red] HP. Gain [blue]{Gold}[/blue] [gold]Gold[/gold].",
-  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.PLAIN.title": "Sacrifice",
-  "BIRDMOD-IMBUE_EVENT.pages.ORNATE.description": "Yoinked the Imbue.",
-  "BIRDMOD-IMBUE_EVENT.pages.PLAIN.description": "You sacrificed your hp for money.",
-  "BIRDMOD-IMBUE_EVENT.title": "Imbue Test Event",
-  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.description": "You test imbue. You can choose to take the imbue or sacrifice hp for money.\n\n\nTHIS WILL BE COMPLETED LATER. IM SORRY.",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.ORNATE.title": "Search the Rubble",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.PLAIN.description": "Nothing happens.",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.options.PLAIN.title": "Ignore",
+  "BIRDMOD-IMBUE_EVENT.pages.ORNATE.description": "Following the mysterious pull, you searched through the nearby rubble until you came across...\nA gray, almost colorless feather of some kind?\n\nIt seems familiar, but you can't quite place it... either way, it seems [sine]special[/sine]\nShaking your head to clear your thoughts, you store the feather and continue on your way.",
+  "BIRDMOD-IMBUE_EVENT.pages.PLAIN.description": "You ignored the camp and kept walking.\nCouldn't have been [i]that[/i] important.",
+  "BIRDMOD-IMBUE_EVENT.title": "Abandoned Camp",
+  "BIRDMOD-IMBUE_EVENT.pages.INITIAL.description": "You come across what looks like an [sine]abandoned camp site[/sine].\nCuriously, something in some nearby rubble feels like it's [jitter]pulling[/jitter] at you...\n\nThough, the feeling is elusive and hard to place, of course.",
+  
+  
+  
+  
+  
+  
   "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.description": "You come across... [sine]yourself?[/sine]\n\nThe other you seems surprised to see you, too.\n\nShe braces for a fight...",
   "BIRDMOD-REFLECTION_EVENT.title": "It's You",
   "BIRDMOD-REFLECTION_EVENT.pages.INITIAL.options.RUN.title": "Run Away",

@@ -1,4 +1,5 @@
 ﻿using BirdMod.BirdModCode.Cards;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -16,8 +17,7 @@ public static class AttackCmdExtensions //All Extension methods much live inside
             ac._attackerAnimName = "Attack";
             ac.ModelSource = card;
             if (play != null) ac.CardPlay = play;
-            if (oc.Monster != null) ac._sourceType = AttackCommand.SourceType.Monster;
-            else ac._sourceType = AttackCommand.SourceType.Card;
+            ac._sourceType = oc is { Monster: not null, IsPet: false } ? AttackCommand.SourceType.Monster : AttackCommand.SourceType.Card;
             if (ply != null) ac._attackerAnimDelay = ply.Character.AttackAnimDelay;
             if (oc.CombatState == null) return ac;
             if (oc.Monster != null) ac.TargetingAllOpponents(oc.CombatState);
@@ -29,7 +29,6 @@ public static class AttackCmdExtensions //All Extension methods much live inside
                             ac.TargetingAllOpponents(oc.CombatState);
                         else
                             ac.Targeting(play.Target);
-                        
             }
             return ac;
         }
