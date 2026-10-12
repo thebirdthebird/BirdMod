@@ -27,7 +27,7 @@ public class Flourish() : BirdModCard(1,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         // .. MakeCalculatedDamage(8, (card, target) => card.Owner.Creature.GetPowerAmount<DexterityPower>() + card.Owner.Creature.GetPowerAmount<VimPower>(), 2)
-        .. MakeCalculatedDamage(0, Bonus, 2)
+        .. MakeCalculatedDamage(8, Bonus, 2)
     ];
     
     private static decimal Bonus(CardModel card, Creature? target)

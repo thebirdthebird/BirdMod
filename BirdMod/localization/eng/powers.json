@@ -51,8 +51,8 @@
   "BIRDMOD-VIM_POWER.smartDescription": "{Amount:cond:<0?Decreases|Increases} [gold]Block[/gold] gained from your next [gold]Block[/gold] card by [blue]{Amount:abs()}[/blue].\n[font_size=14][i][color=#909090]Vim Art by @.erebys[/color][/i][/font_size]",
   "BIRDMOD-VIM_POWER.title": "Vim",
   
-  "BIRDMOD-EN_PASSANT_POWER.description": "Whenever you gain [gold]Block[/gold], gain [gold]Counter[/gold] equal to the amount of [gold]Block[/gold] gained that hits ALL enemies.",
-  "BIRDMOD-EN_PASSANT_POWER.smartDescription": "Whenever you gain [gold]Block[/gold], gain [gold]Counter[/gold] equal to {Amount:plural:|[blue]{}[/blue] times }the amount of [gold]Block[/gold] gained that hits ALL enemies.",
+  "BIRDMOD-EN_PASSANT_POWER.description": "Whenever you gain [gold]Block[/gold] from a card, gain [gold]Counter[/gold] equal to the amount of [gold]Block[/gold] gained that hits ALL enemies.",
+  "BIRDMOD-EN_PASSANT_POWER.smartDescription": "Whenever you gain [gold]Block[/gold] from a card, gain [gold]Counter[/gold] equal to {Amount:plural:|[blue]{}[/blue] times }the amount of [gold]Block[/gold] gained that hits ALL enemies.",
   "BIRDMOD-EN_PASSANT_POWER.title": "En Passant",
   
   "BIRDMOD-AWAKENED_FORM_POWER.description": "Whenever you play a card, gain [gold]Dexterity[/gold] this turn.",
@@ -87,8 +87,8 @@
   "BIRDMOD-STAGGERING_POWER.smartDescription": "After taking attack damage [blue]{HitsLeft}[/blue] more {HitsLeft:plural:time|times}, takes [red]{Amount}[/red] additional damage.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
   "BIRDMOD-STAGGERING_POWER.title": "Staggering",
 
-  "BIRDMOD-LIGHTFOOTED_POWER.description": "After gaining [gold]Block[/gold], gain [gold]Vigor[/gold].",
-  "BIRDMOD-LIGHTFOOTED_POWER.smartDescription": "After gaining [gold]Block[/gold], gain [blue]{Amount}[/blue] [gold]Vigor[/gold].",
+  "BIRDMOD-LIGHTFOOTED_POWER.description": "After gaining [gold]Block[/gold] from a card, gain [gold]Vigor[/gold].",
+  "BIRDMOD-LIGHTFOOTED_POWER.smartDescription": "After gaining [gold]Block[/gold] from a card, gain [blue]{Amount}[/blue] [gold]Vigor[/gold].",
   "BIRDMOD-LIGHTFOOTED_POWER.title": "Lightfooted",
 
   "BIRDMOD-HIGH_GROUND_POWER.description": "After [gold]Staggering[/gold] is triggered, gain [gold]Block[/gold].",
