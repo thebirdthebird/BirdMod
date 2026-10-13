@@ -16,7 +16,7 @@ public class Overexert() : BirdModCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new EnergyVar(1),
-        new PowerVar<DrawLessNextTurnPower>(1m)
+        // new PowerVar<DrawLessNextTurnPower>(1m)
     ];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
@@ -27,12 +27,12 @@ public class Overexert() : BirdModCard(0,
         ?
         [
             this.EnergyHoverTip,
-            HoverTipFactory.FromPower<DrawLessNextTurnPower>()
+            // HoverTipFactory.FromPower<DrawLessNextTurnPower>()
         ] :
     [
         new HoverTip(new LocString("cards", "BIRDMOD-OVEREXERT.flavor")),
         this.EnergyHoverTip,
-        HoverTipFactory.FromPower<DrawLessNextTurnPower>()
+        // HoverTipFactory.FromPower<DrawLessNextTurnPower>()
     ];
 
     public override async Task SuperPlay(
@@ -40,8 +40,7 @@ public class Overexert() : BirdModCard(0,
         CardPlay play, Creature oc)
     {
         if (Owner != null) await PlayerCmd.GainEnergy((Decimal) this.DynamicVars.Energy.IntValue, this.Owner);
-        await PowerCmd.Apply<DrawLessNextTurnPower>(choiceContext, oc,
-            base.DynamicVars["DrawLessNextTurnPower"].BaseValue, oc, this);
+        // await PowerCmd.Apply<DrawLessNextTurnPower>(choiceContext, oc, base.DynamicVars["DrawLessNextTurnPower"].BaseValue, oc, this);
     }
 
     protected override void OnUpgrade()

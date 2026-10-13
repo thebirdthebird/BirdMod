@@ -21,8 +21,8 @@ public class Multiattack() : BirdModCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(6, ValueProp.Move),
-        new RepeatVar(2),
+        new DamageVar(3, ValueProp.Move),
+        new RepeatVar(3),
         new IntVar("HitsIfCounter", 1)
     ];
     
@@ -61,7 +61,7 @@ public class Multiattack() : BirdModCard(1,
     {
         get
         {
-            return CombatManager.Instance.History.Entries.OfType<PowerReceivedEntry>().Any<PowerReceivedEntry>((Func<PowerReceivedEntry, bool>) (e => e.HappenedThisTurn(this.CombatState) && e.Power is CounterPower or CounterAllPower && e.Applier == CalculationOwner));
+            return CombatManager.Instance.History.Entries.OfType<PowerReceivedEntry>().Any<PowerReceivedEntry>((Func<PowerReceivedEntry, bool>) (e => e.HappenedThisTurn(this.CombatState) && e.Power is CounterPower or CounterAllPower && e.Applier == (Owner?.Creature ?? CalculationOwner)));
         }
     }
 

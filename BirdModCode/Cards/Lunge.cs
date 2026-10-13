@@ -18,7 +18,7 @@ public class Lunge() : BirdModCard(1, CardType.Attack,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(8, ValueProp.Move),
-        new PowerVar<StaggeringPower>(10m),
+        new PowerVar<StaggeringPower>(6m),
         new IntVar("StaggeringHits", 3m)
     ];
     

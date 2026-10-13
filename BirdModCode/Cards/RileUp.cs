@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace BirdMod.BirdModCode.Cards;
 
 public class RileUp() : BirdModCard(1, CardType.Skill,
-    CardRarity.Uncommon, TargetType.AllAllies)
+    CardRarity.Event, TargetType.AllAllies)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     

@@ -19,9 +19,9 @@ public class LetLoose() : BirdModCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(4, ValueProp.Move),
-        new RepeatVar(3),
+        new RepeatVar(2),
         new PowerVar<StaggeringPower>(5m),
-        new IntVar("StaggeringHits", 5m)
+        new IntVar("StaggeringHits", 3m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
@@ -55,6 +55,6 @@ public class LetLoose() : BirdModCard(0,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Damage.UpgradeValueBy(2m);
+        base.DynamicVars.Damage.UpgradeValueBy(1m);
     }
 }

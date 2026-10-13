@@ -25,7 +25,7 @@ public class FeatherDance() : BirdModCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(12, ValueProp.Move),
-        new PowerVar<WeakPower>(3m),
+        new PowerVar<WeakPower>(1m),
         new PowerVar<DexterityPower>(4m)
     ];
     

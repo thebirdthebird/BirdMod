@@ -39,7 +39,7 @@ public class Rally() : BirdModCard(1, CardType.Skill,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Block.UpgradeValueBy(2m);
-        base.DynamicVars["VigorPower"].UpgradeValueBy(2m);
+        base.DynamicVars.Block.UpgradeValueBy(3m);
+        // base.DynamicVars["VigorPower"].UpgradeValueBy(2m);
     }
 }

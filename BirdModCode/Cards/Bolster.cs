@@ -60,7 +60,7 @@ public class Bolster() : BirdModCard(1,
     {
         get
         {
-            return CombatManager.Instance.History.Entries.OfType<PowerReceivedEntry>().Any(e => e.HappenedThisTurn(CombatState) && e.Power is CounterPower or CounterAllPower && e.Applier == CalculationOwner);
+            return CombatManager.Instance.History.Entries.OfType<PowerReceivedEntry>().Any(e => e.HappenedThisTurn(CombatState) && e.Power is CounterPower or CounterAllPower && e.Applier == (Owner?.Creature ?? CalculationOwner));
         }
     }
 }

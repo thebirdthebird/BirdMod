@@ -15,14 +15,15 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class TearToShreds() : BirdModCard(2,
+public class TearToShreds() : BirdModCard(1,
     CardType.Attack, CardRarity.Ancient,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(4, ValueProp.Move),
-        new RepeatVar(8),
-        new PowerVar<DarkShacklesPower>(9m)
+        new RepeatVar(4),
+        // new PowerVar<DarkShacklesPower>(9m)
+        new PowerVar<CounterAllPower>(10m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 
@@ -47,13 +48,15 @@ public class TearToShreds() : BirdModCard(2,
             .HelpTheCmd(oc, play, this, Owner)
             .WithHitCount(DynamicVars.Repeat.IntValue)
             .Execute(choiceContext);
-        await PowerCmd.Apply<TearToShredsPower>(choiceContext, play?.Target  == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], this.DynamicVars["DarkShacklesPower"].BaseValue, oc, (CardModel)this);
+        await PowerCmd.Apply<CounterAllPower>(choiceContext, oc, base.DynamicVars["CounterAllPower"].BaseValue, oc, this);
+        // await PowerCmd.Apply<TearToShredsPower>(choiceContext, play?.Target  == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], this.DynamicVars["DarkShacklesPower"].BaseValue, oc, (CardModel)this);
     }
 
     protected override void OnUpgrade()
     {
         base.DynamicVars.Damage.UpgradeValueBy(1m);
         // base.DynamicVars.Repeat.UpgradeValueBy(3m);
-        base.DynamicVars["DarkShacklesPower"].UpgradeValueBy(6m);
+        // base.DynamicVars["DarkShacklesPower"].UpgradeValueBy(6m);
+        base.DynamicVars["CounterAllPower"].UpgradeValueBy(6m);
     }
 }

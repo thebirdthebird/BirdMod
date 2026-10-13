@@ -27,7 +27,7 @@ public class Twirl() : BirdModCard(1, CardType.Skill,
     {
         get
         {
-            return CombatManager.Instance.History.Entries.OfType<PowerReceivedEntry>().Any<PowerReceivedEntry>((Func<PowerReceivedEntry, bool>) (e => e.HappenedThisTurn(this.CombatState) && e.Power is CounterPower or CounterAllPower && e.Applier == this.Owner.Creature));
+            return CombatManager.Instance.History.Entries.OfType<PowerReceivedEntry>().Any<PowerReceivedEntry>((Func<PowerReceivedEntry, bool>) (e => e.HappenedThisTurn(this.CombatState) && e.Power is CounterPower or CounterAllPower && e.Applier == Owner?.Creature));
         }
     }
     

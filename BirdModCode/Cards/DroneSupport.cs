@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 namespace BirdMod.BirdModCode.Cards;
 
 public class DroneSupport() : BirdModCard(2,
-    CardType.Power, CardRarity.Rare,
+    CardType.Power, CardRarity.Event,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [

@@ -61,7 +61,7 @@
   "BIRDMOD-DRONE_SUPPORT.description": "Deal {DroneSupportPower:diff()} damage to all enemies at the end of your turn.",
   "BIRDMOD-DRONE_SUPPORT.title": "Drone Support",
   "BIRDMOD-DRONE_SUPPORT.flavor": "Placeholder.",
-  "BIRDMOD-PREPARE.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain [gold]Counter[/gold] equal to block that deals damage to ALL enemies.",
+  "BIRDMOD-PREPARE.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain [gold]Counter[/gold] equal to block that hits ALL enemies.",
   "BIRDMOD-PREPARE.title": "Prepare",
   "BIRDMOD-PREPARE.flavor": "Placeholder.",
   "BIRDMOD-RETALIATE.description": "Gain {ThornsPower:diff()} [gold]Thorns[/gold] and {CounterPower:diff()} [gold]Counter[/gold].",
@@ -95,10 +95,12 @@
   "BIRDMOD-TAPPY.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {CounterAllPower:diff()} [gold]Counter[/gold] that hits ALL enemies.",
   "BIRDMOD-TAPPY.title": "Tappy",
   "BIRDMOD-TAPPY.flavor": "[wave amp=40.0 freq=8.0 connected=0][outline_size=8][outline_color=white][color=#000000]\"Tappy!\"[/color][/outline_color][/outline_size][/wave]",
-  "BIRDMOD-OVEREXERT.description": "Gain {Energy:energyIcons()}.\nDraw {DrawLessNextTurnPower:diff()} less {DrawLessNextTurnPower:plural:card|cards} next turn.",
+  "BIRDMOD-OVEREXERT.descriptionOLD": "Gain {Energy:energyIcons()}.\nDraw {DrawLessNextTurnPower:diff()} less {DrawLessNextTurnPower:plural:card|cards} next turn.",
+  "BIRDMOD-OVEREXERT.description": "Gain {Energy:energyIcons()}.",
   "BIRDMOD-OVEREXERT.title": "Overexert",
-  "BIRDMOD-OVEREXERT.flavor": "Placeholder.",
-  "BIRDMOD-TEAR_TO_SHREDS.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nEnemy loses {DarkShacklesPower:diff()} [gold]Strength[/gold] this turn.",
+  "BIRDMOD-OVEREXERT.flavor": "The name of this card doesn't really make sense anymore, huh?",
+  "BIRDMOD-TEAR_TO_SHREDS.descriptionOLD": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nEnemy loses {DarkShacklesPower:diff()} [gold]Strength[/gold] this turn.",
+  "BIRDMOD-TEAR_TO_SHREDS.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nGain {CounterAllPower:diff()} [gold]Counter[/gold] that hits ALL enemies.",
   "BIRDMOD-TEAR_TO_SHREDS.title": "Tear To Shreds",
   "BIRDMOD-TEAR_TO_SHREDS.flavor": "Placeholder.",
   "BIRDMOD-RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold].",
@@ -262,7 +264,8 @@
   "BIRDMOD-RAM.description": "Gain {Block:diff()} [gold]Block[/gold].\nApply [gold]Staggering[/gold] equal to Block that triggers in {StaggeringHits:diff()} {StaggeringHits:plural:hit|hits}.\nShuffle a [gold]Stumble[/gold] into your [gold]Draw Pile[/gold].",
   "BIRDMOD-RAM.title": "Ram",
   "BIRDMOD-RAM.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
-  "BIRDMOD-TRIP_UP.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nGain [gold]Counter[/gold] and apply [gold]Staggering[/gold] that triggers in {StaggeringHits:diff()} {StaggeringHits:plural:hit|hits} equal to damage dealt.",
+  "BIRDMOD-TRIP_UP.descriptionOLD": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nGain [gold]Counter[/gold] and apply [gold]Staggering[/gold] that triggers in {StaggeringHits:diff()} {StaggeringHits:plural:hit|hits} equal to damage dealt.",
+  "BIRDMOD-TRIP_UP.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nGain {CounterPower:diff()} [gold]Counter[/gold].\nApply {StaggeringPower:diff()} [gold]Staggering[/gold] that triggers in {StaggeringHits:diff()} {StaggeringHits:plural:hit|hits}.",
   "BIRDMOD-TRIP_UP.title": "Trip Up",
   "BIRDMOD-TRIP_UP.flavor": "[shake rate=30.0 level=8 connected=0][outline_size=8][outline_color=white][color=#000000]\"YOUR SHINS ARE MINE!!!\"[/color][/outline_color][/outline_size][/shake]",
   "BIRDMOD-TAILWIND.description": "After [gold]Staggering[/gold] is triggered, draw {TailwindPower:diff()} {TailwindPower:plural:card|cards}.",
@@ -344,8 +347,10 @@
   "BIRDMOD-SPIRIT_SUMMON.description": "Summon a Spirit.\nTesting.",
   "BIRDMOD-SPIRIT_SUMMON.title": "Spirit Summon",
   "BIRDMOD-SPIRIT_SUMMON.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
-  
-  
+
+  "BIRDMOD-IRON_WING.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.\nGain {CounterAllPower:diff()} [gold]Counter[/gold] that hits ALL enemies.",
+  "BIRDMOD-IRON_WING.title": "Iron Wing",
+  "BIRDMOD-IRON_WING.flavor": "Iron Wave 2: Yuri Boogaloo",
   
   
   

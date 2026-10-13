@@ -19,7 +19,7 @@ public class Cut() : BirdModCard(2, CardType.Attack,
     CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(4, ValueProp.Move),
+        new DamageVar(3, ValueProp.Move),
         new RepeatVar(3),
     ];
     
@@ -54,6 +54,6 @@ public class Cut() : BirdModCard(2, CardType.Attack,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Damage.UpgradeValueBy(2m);
+        base.DynamicVars.Damage.UpgradeValueBy(1m);
     }
 }

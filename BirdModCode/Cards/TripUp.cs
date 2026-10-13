@@ -17,9 +17,11 @@ public class TripUp() : BirdModCard(1, CardType.Attack,
     CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(3, ValueProp.Move),
+        new DamageVar(2, ValueProp.Move),
         new RepeatVar(2),
-        new IntVar("StaggeringHits", 1m)
+        new PowerVar<CounterPower>(4m),
+        new PowerVar<StaggeringPower>(8m),
+        new IntVar("StaggeringHits", 4m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
@@ -50,8 +52,8 @@ public class TripUp() : BirdModCard(1, CardType.Attack,
             .SelectMany(
                 r => r)
             .Sum(r => r.TotalDamage);
-        await PowerCmd.Apply<CounterPower>(choiceContext, oc, damageNum, oc, this);
-        var staggering = await PowerCmd.Apply<StaggeringPower>(choiceContext, play?.Target == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], damageNum, oc, this);
+        await PowerCmd.Apply<CounterPower>(choiceContext, oc, this.DynamicVars["CounterPower"].BaseValue,oc, this);
+        var staggering = await PowerCmd.Apply<StaggeringPower>(choiceContext, play?.Target == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], this.DynamicVars["StaggeringPower"].BaseValue, oc, this);
         foreach (var pain in staggering)
         {
             pain.SetHits(DynamicVars["StaggeringHits"].IntValue);
@@ -61,6 +63,8 @@ public class TripUp() : BirdModCard(1, CardType.Attack,
 
     protected override void OnUpgrade()
     {
+        base.DynamicVars["CounterPower"].UpgradeValueBy(2m);
+        base.DynamicVars["StaggeringPower"].UpgradeValueBy(4m);
         base.DynamicVars.Damage.UpgradeValueBy(1m);
     }
 }

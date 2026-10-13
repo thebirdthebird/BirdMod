@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace BirdMod.BirdModCode.Cards;
 
 public class KickFlip() : BirdModCard(1,
-    CardType.Attack, CardRarity.Common,
+    CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
@@ -54,6 +54,6 @@ public class KickFlip() : BirdModCard(1,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Damage.UpgradeValueBy(2m);
+        base.DynamicVars.Damage.UpgradeValueBy(1m);
     }
 }
