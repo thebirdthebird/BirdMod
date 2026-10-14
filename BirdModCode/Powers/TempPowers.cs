@@ -28,3 +28,4 @@ public class AncestralProtectionStrPower() : CustomTemporaryPowerModelWrapper<An
 public class CurbstompStrPower() : CustomTemporaryPowerModelWrapper<CurbstompPower, StrengthPower> { protected override bool InvertInternalPowerAmount => true; }
 public class PlatonicKissPower() : CustomTemporaryPowerModelWrapper<PlatonicKiss, DexterityPower> { }
 public class StormfrontDexPower() : CustomTemporaryPowerModelWrapper<StormfrontPower, DexterityPower> { }
+public class FeatherPower() : CustomTemporaryPowerModelWrapper<Feather, DexterityPower> { }

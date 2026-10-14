@@ -1,13 +1,17 @@
 ﻿using BaseLib.Utils;
 using BirdMod.BirdModCode.Cards;
 using BirdMod.BirdModCode.Extensions;
+using BirdMod.BirdModCode.Powers;
 using BirdMod.BirdModCode.SansIMeanSingletons;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.CardPools;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Cards;
@@ -19,13 +23,24 @@ public class Feather() : BirdModCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(4m, ValueProp.Move),
-        new DynamicVar("Increase", 1m),
+        new PowerVar<FeatherPower>(1m)
+        // new DynamicVar("Increase", 1m),
     ];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
         CardKeyword.Retain,
         CardKeyword.Exhaust
     ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
+        ?
+        [
+            HoverTipFactory.FromPower<DexterityPower>()
+        ] :
+        [
+            new HoverTip(new LocString("cards", "BIRDMOD-FEATHER.flavor")),
+            HoverTipFactory.FromPower<DexterityPower>()
+        ];
 
     public override async Task SuperPlay(
         PlayerChoiceContext choiceContext,
@@ -35,12 +50,14 @@ public class Feather() : BirdModCard(0,
             .WithHitFx("vfx/vfx_shiv_throw")
             .HelpTheCmd(oc, play, this, Owner)
             .Execute(choiceContext);
-        if (Owner != null) TalonScaling.ScaleDamage((int)DynamicVars["Increase"].BaseValue, this.Owner.PlayerCombatState);
+        await PowerCmd.Apply<FeatherPower>(choiceContext, oc, base.DynamicVars["FeatherPower"].BaseValue, oc, this);
+
+        // if (Owner != null) TalonScaling.ScaleDamage((int)DynamicVars["Increase"].BaseValue, this.Owner.PlayerCombatState);
     }
 
     protected override void OnUpgrade()
     {
         base.DynamicVars.Damage.UpgradeValueBy(2m);
-        base.DynamicVars["Increase"].UpgradeValueBy(1m);
+        // base.DynamicVars["Increase"].UpgradeValueBy(1m);
     }
 }
