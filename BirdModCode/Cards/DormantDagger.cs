@@ -33,7 +33,7 @@ public class DormantDagger() : BirdModCard(1,
     
     public override bool CanBeGeneratedInCombat => false;
     public override int MaxUpgradeLevel => 0;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(10, ValueProp.Move),
         new DynamicVar("Kills", 6m)

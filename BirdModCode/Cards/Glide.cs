@@ -13,7 +13,6 @@ namespace BirdMod.BirdModCode.Cards;
 public class Glide() : BirdModCard(1, CardType.Skill,
     CardRarity.Rare, TargetType.Self)
 {
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         
     ];

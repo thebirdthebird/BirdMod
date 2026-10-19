@@ -17,11 +17,11 @@ namespace BirdMod.BirdModCode.Cards;
 
   
 public class Scratch() : BirdModCard(2,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Attack, CardRarity.Event,
     TargetType.AnyEnemy), ITranscendenceCard
 {
     public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<TearToShreds>();
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(4, ValueProp.Move),
         new RepeatVar(3),

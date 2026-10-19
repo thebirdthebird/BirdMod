@@ -31,13 +31,13 @@ public class GoPrimal() : BirdModCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?
         [
-            HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<TalonOld>(),
             .. HoverTipFactory.FromEnchantment<Swift>()
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-WARNING.text")),
             new HoverTip(new LocString("cards", "BIRDMOD-GO_PRIMAL.flavor")),
-            HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<TalonOld>(),
             .. HoverTipFactory.FromEnchantment<Swift>()
         ];
 
@@ -50,7 +50,7 @@ public class GoPrimal() : BirdModCard(1,
         List<CardModel> talons = [];
         for (int i = 0; i < DynamicVars.Cards.BaseValue; i++)
         {
-            talons.Add(CombatState.CreateCard<Talon>(Owner));
+            talons.Add(CombatState.CreateCard<TalonOld>(Owner));
         }
         foreach (var item in await CardPileCmd.AddGeneratedCardsToCombat(talons, PileType.Hand, Owner))
         {

@@ -15,7 +15,7 @@ public class RileUp() : BirdModCard(1, CardType.Skill,
     CardRarity.Event, TargetType.AllAllies)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<VigorPower>(7m),
         new PowerVar<VimPower>(-3m)

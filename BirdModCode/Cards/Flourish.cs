@@ -24,7 +24,7 @@ public class Flourish() : BirdModCard(1,
         get => field ?? Owner?.Creature;
         set => field = value;
     }
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         // .. MakeCalculatedDamage(8, (card, target) => card.Owner.Creature.GetPowerAmount<DexterityPower>() + card.Owner.Creature.GetPowerAmount<VimPower>(), 2)
         .. MakeCalculatedDamage(8, Bonus, 2)

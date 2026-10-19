@@ -14,6 +14,7 @@ public class BirdStrike() : BirdModCard(1,
     TargetType.AnyEnemy)
 {
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Strike };
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(6, ValueProp.Move)
     ];

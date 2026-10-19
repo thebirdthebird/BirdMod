@@ -17,7 +17,6 @@ public class Weave() : BirdModCard(2,
     CardType.Skill, CardRarity.Basic,
     TargetType.Self)
 {
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<DodgePower>(1M)
     ];

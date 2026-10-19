@@ -16,7 +16,7 @@ public class Stormfront() : BirdModCard(2,
     TargetType.Self)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<StormfrontPower>(1m)
     ];

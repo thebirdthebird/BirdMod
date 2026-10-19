@@ -42,7 +42,7 @@ public class Twirl() : BirdModCard(1, CardType.Skill,
             HoverTipFactory.FromPower<CounterPower>(),
             HoverTipFactory.Static(StaticHoverTip.ReplayStatic)
         ];
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(7, ValueProp.Move),
         new IntVar("Replay", 1m),

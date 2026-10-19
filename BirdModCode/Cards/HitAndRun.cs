@@ -16,7 +16,7 @@ public class HitAndRun() : BirdModCard(0,
     TargetType.Self)
 {
     protected override bool HasEnergyCostX => true;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<HitAndRunPower>(4m),
     ];

@@ -34,6 +34,7 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
         CustomLocTableManager.Register("owie");
         CustomLocTableManager.Register("battle");
+        CustomLocTableManager.Register("talontext");
 
         ModManager.OnMetricsUpload += BirdModMetrics.OnMetricsUpload;
 

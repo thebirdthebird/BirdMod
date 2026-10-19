@@ -20,6 +20,7 @@ public class ConfidentStrike() : BirdModCard(1,
     TargetType.AnyEnemy)
 {
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Strike };
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(9, ValueProp.Move),
         new RepeatVar(2)

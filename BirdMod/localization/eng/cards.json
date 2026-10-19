@@ -287,9 +287,9 @@
   "BIRDMOD-FLOURISH.description": "Deal {CalculatedDamage:diff()} damage.\nThis card deals additional damage equal to {ExtraDamage:diff()} times your [gold]Dexterity[/gold] and [gold]Vim[/gold].",
   "BIRDMOD-FLOURISH.title": "Flourish",
   "BIRDMOD-FLOURISH.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
-  "BIRDMOD-TALON.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nIncrease the amount of hits of ALL Talon cards by {Increase:diff()} this combat.",
-  "BIRDMOD-TALON.title": "Talon",
-  "BIRDMOD-TALON.flavor": "[outline_size=8][outline_color=white][color=#000000]\"My Ancestors would've been proud of me.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-TALON_OLD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nIncrease the amount of hits of ALL Talon cards by {Increase:diff()} this combat.",
+  "BIRDMOD-TALON_OLD.title": "Talon",
+  "BIRDMOD-TALON_OLD.flavor": "[outline_size=8][outline_color=white][color=#000000]\"My Ancestors would've been proud of me.\"[/color][/outline_color][/outline_size]",
   "BIRDMOD-QUICK_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {Energy:energyIcons()} if you gained [gold]Counter[/gold] this turn.",
   "BIRDMOD-QUICK_STRIKE.title": "Quick Strike",
   "BIRDMOD-QUICK_STRIKE.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Tricked you.\"[/color][/outline_color][/outline_size]",
@@ -353,8 +353,29 @@
   "BIRDMOD-IRON_WING.flavor": "Iron Wave 2: Yuri Boogaloo",
   
   
+  "BIRDMOD-TALON.description": "Deal 4 damage.",
+  "BIRDMOD-TALON.title": "Talon",
+  "BIRDMOD-TALON.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
+
+  "BIRDMOD-GIVE_TALON_MORE_HITS.description": "Choose a [gold]Talon[/gold] in your hand.\nIt hits {AddRepeat:plural:an additional time|{} additional times}.",
+  "BIRDMOD-GIVE_TALON_MORE_HITS.title": "GiveTalonMoreHitsTest",
+  "BIRDMOD-GIVE_TALON_MORE_HITS.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-GIVE_TALON_MORE_HITS.selectionScreenPrompt": "Choose a [gold]Talon[/gold] to give more hits.",
   
-  
+  "BIRDMOD-MAKE_TALON_COOL.description": "make talon give block and give vim and apply weak",
+  "BIRDMOD-MAKE_TALON_COOL.title": "MakeTalonCool",
+  "BIRDMOD-MAKE_TALON_COOL.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-MAKE_TALON_COOL.selectionScreenPrompt": "Choose a [gold]Talon[/gold] to make cool.",
+
+  "BIRDMOD-TALON_RANDOM_EFFECT.description": "Give a talon a random (1-3) amount of random powers.",
+  "BIRDMOD-TALON_RANDOM_EFFECT.title": "TalonRandomEffect",
+  "BIRDMOD-TALON_RANDOM_EFFECT.selectionScreenPrompt": "Choose a [gold]Talon[/gold] to give a random effect.",
+
+  "BIRDMOD-CONSIDER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Improv[/gold]: \"Deal {Damage:diff()} damage.\"",
+  "BIRDMOD-CONSIDER.title": "Consider",
+  "BIRDMOD-CONSIDER.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Placeholder.\"[/color][/outline_color][/outline_size]",
+  "BIRDMOD-CONSIDER.selectionScreenPrompt": "Choose a [gold]Talon[/gold].",
+
   "BIRDMOD-SNOWGRAVE.description": "Cast Snowgrave.",
   "BIRDMOD-SNOWGRAVE.title": "Snowgrave",
   "BIRDMOD-SNOWGRAVE.talk": "[outline_size=8][outline_color=white][color=#000000]S...Snowgrave? I... don't know any magic...[/color][/outline_color][/outline_size]"

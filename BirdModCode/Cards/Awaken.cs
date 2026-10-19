@@ -12,7 +12,7 @@ public class Awaken() : BirdModCard(1, CardType.Skill,
     CardRarity.Rare, TargetType.AnyAlly)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<AwakenPower>(1m)
     ];

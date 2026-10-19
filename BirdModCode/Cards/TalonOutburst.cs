@@ -34,7 +34,7 @@ public class TalonOutburst() : BirdModCard(2,
             new HoverTip(new LocString("cards", "BIRDMOD-WARNING.text")),
             new HoverTip(new LocString("cards", "BIRDMOD-TALON_OUTBURST.flavor"))
         ];
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(3m, ValueProp.Move),
         new RepeatVar(3),

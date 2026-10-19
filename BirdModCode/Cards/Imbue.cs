@@ -33,7 +33,7 @@ public class Imbue() : BirdModCard(0,
     
     public override bool CanBeGeneratedInCombat => false;
     public override int MaxUpgradeLevel => 0;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DynamicVar("Energy", 15m)
     ];

@@ -17,7 +17,7 @@ public class Evade() : BirdModCard(1, CardType.Skill,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
         CardKeyword.Exhaust
     ];
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<DodgePower>(2M)
     ];

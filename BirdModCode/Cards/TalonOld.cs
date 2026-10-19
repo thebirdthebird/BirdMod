@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class Talon() : BirdModCard(1, CardType.Attack,
+public class TalonOld() : BirdModCard(1, CardType.Attack,
     CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     private decimal ExtraDamageFromTalon

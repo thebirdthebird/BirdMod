@@ -1,5 +1,5 @@
 {
-  "BIRDMOD-TRIBAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Instinct|Instincts}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-TRIBAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Talon|Talons}[/gold] into your [gold]Hand[/gold].",
   "BIRDMOD-TRIBAL_FEATHER.flavor": "The only remnant of the tribe.",
   "BIRDMOD-TRIBAL_FEATHER.title": "Tribal Feather",
   "BIRDMOD-RITUAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Ancestral Guidance|Ancestral Guidances}[/gold] into your [gold]Hand[/gold].",

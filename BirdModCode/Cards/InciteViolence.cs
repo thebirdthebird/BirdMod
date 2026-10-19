@@ -17,7 +17,7 @@ public class InciteViolence() : BirdModCard(1,
     TargetType.AllAllies)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CardsVar(1),
         new IntVar("Adroit", 3m),
@@ -30,12 +30,12 @@ public class InciteViolence() : BirdModCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?
         [
-            HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<TalonOld>(),
             .. HoverTipFactory.FromEnchantment<Adroit>()
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-INCITE_VIOLENCE.flavor")),
-            HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<TalonOld>(),
             .. HoverTipFactory.FromEnchantment<Adroit>()
         ];
 
@@ -49,10 +49,10 @@ public class InciteViolence() : BirdModCard(1,
             select c;
         foreach (Creature creature in enumerable)
         {
-            List<Talon> cards = new List<Talon>();
+            List<TalonOld> cards = new List<TalonOld>();
             for (int i = 0; i < DynamicVars.Cards.BaseValue; i++)
             {
-                cards.Add(CombatState.CreateCard<Talon>(creature.Player!));
+                cards.Add(CombatState.CreateCard<TalonOld>(creature.Player!));
             }
             IReadOnlyList<CardPileAddResult> results = await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Draw, base.Owner, CardPilePosition.Random);
             foreach (var item in results)

@@ -1,4 +1,5 @@
 ﻿using BirdMod.BirdModCode.Cards;
+using BirdMod.BirdModCode.Cards.NewCards;
 using BirdMod.BirdModCode.Powers;
 using BirdMod.BirdModCode.Relics;
 using MegaCrit.Sts2.Core.Combat;
@@ -31,7 +32,8 @@ public class TribalFeather() : BirdModRelic
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Instinct>()
+        // HoverTipFactory.FromCard<Instinct>()
+        .. HoverTipFactory.FromCardWithCardHoverTips<Talon>()
     ];
     
     public override async Task BeforeHandDraw(
@@ -44,7 +46,7 @@ public class TribalFeather() : BirdModRelic
             return;
         List<CardModel> cards = new List<CardModel>();
         for (int index = 0; index < this.DynamicVars.Cards.IntValue; ++index)
-            cards.Add(this.Owner.Creature.CombatState.CreateCard<Instinct>(this.Owner));
+            cards.Add(this.Owner.Creature.CombatState.CreateCard<Talon>(this.Owner));
         await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, this.Owner);
     }
     

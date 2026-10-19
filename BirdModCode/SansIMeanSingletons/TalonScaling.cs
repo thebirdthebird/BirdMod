@@ -17,9 +17,9 @@ public class TalonScaling() : CustomSingletonModel(HookType.Combat)
         // MainFile.Logger.Info($"We Scaled {heyHowMuchAreWeScaling} times");
         if (pcsThatIHate == null) return;
         
-        IEnumerable<Talon> enumerable = pcsThatIHate.AllCards.OfType<Talon>();
+        IEnumerable<TalonOld> enumerable = pcsThatIHate.AllCards.OfType<TalonOld>();
         decimal baseValue = heyHowMuchAreWeScaling;
-        foreach (Talon item in enumerable)
+        foreach (TalonOld item in enumerable)
         {
             item.BuffFromTalonPlay(baseValue);
         }
@@ -32,7 +32,7 @@ public class TalonScaling() : CustomSingletonModel(HookType.Combat)
 
     public override Task AfterCardGeneratedForCombat(CardModel card, Player? creator)
     {
-        if (card is Talon talon)
+        if (card is TalonOld talon)
         {
             talon.BuffFromTalonPlay(_amountOfTimesScaled);
         }

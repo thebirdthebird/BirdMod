@@ -18,7 +18,7 @@ public class PlatonicKiss() : BirdModCard(1,
     TargetType.AnyAlly)
 {
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new EnergyVar(1),
         new CardsVar(1),

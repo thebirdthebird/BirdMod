@@ -14,7 +14,7 @@ public class Whirl() : BirdModCard(0, CardType.Skill,
     CardRarity.Rare, TargetType.AnyEnemy)
 {
     protected override bool HasEnergyCostX => true;
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<StaggeringPower>(7m),
         new IntVar("StaggeringHits", 3m)

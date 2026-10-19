@@ -2,6 +2,7 @@
 using BaseLib.Utils.NodeFactories;
 using BirdMod.BirdModCode.Extensions;
 using BirdMod.BirdModCode.Cards;
+using BirdMod.BirdModCode.Cards.NewCards;
 using BirdMod.BirdModCode.Relics;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
@@ -28,7 +29,7 @@ public class BirdMod : PlaceholderCharacterModel
         ModelDb.Card<BirdStrike>(),
         ModelDb.Card<BirdStrike>(),
         ModelDb.Card<BirdStrike>(),
-        ModelDb.Card<Scratch>(),
+        ModelDb.Card<Consider>(),
         ModelDb.Card<BirdDefend>(),
         ModelDb.Card<BirdDefend>(),
         ModelDb.Card<BirdDefend>(),

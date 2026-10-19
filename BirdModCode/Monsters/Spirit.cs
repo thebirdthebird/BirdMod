@@ -288,8 +288,8 @@ public class Spirit() : CustomPetModel(visibleHp: false)
 			    {
 				    if (PseudoHand[i] is GoPrimal)
 				    {
-					    PseudoDeck.Add(PseudoCreate<Talon>());
-					    PseudoDeck.Add(PseudoCreate<Talon>());
+					    PseudoDeck.Add(PseudoCreate<TalonOld>());
+					    PseudoDeck.Add(PseudoCreate<TalonOld>());
 				    }
 				    else if (PseudoHand[i] is Tippy)
 				    {

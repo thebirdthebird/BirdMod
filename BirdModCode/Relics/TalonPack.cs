@@ -21,13 +21,13 @@ public class TalonPack() : BirdModRelic
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         [
-            HoverTipFactory.FromCard<Talon>(),
+            HoverTipFactory.FromCard<TalonOld>(),
             .. HoverTipFactory.FromEnchantment<Adroit>()
         ];
 
     public override async Task AfterObtained()
     {
-        CardModel card = base.Owner.RunState.CreateCard<Talon>(base.Owner);
+        CardModel card = base.Owner.RunState.CreateCard<TalonOld>(base.Owner);
         CardCmd.Enchant<Adroit>(card, DynamicVars["Adroit"].IntValue);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck), 2f);
     }

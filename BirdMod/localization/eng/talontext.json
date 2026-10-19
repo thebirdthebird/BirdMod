@@ -1,0 +1,12 @@
+﻿{
+  "T_BLOCK": "Gain {B:diff()} [gold]Block[/gold].",
+  
+  "T_DMG": "Deal {D:diff()} damage.",
+  "T_DMGREPEAT": "Deal {D:diff()} damage {Repeat:diff()} times.",
+  "T_DMGALL": "Deal {D:diff()} damage to ALL enemies.",
+  "T_DMGREPEATALL": "Deal {D:diff()} damage {Repeat:diff()} times to ALL enemies.",
+  
+  "T_APPLYPWR": "Apply {Power:diff()} [gold]{PowerName}[/gold].",
+  "T_APPLYPWRALL": "Apply {Power:diff()} [gold]{PowerName}[/gold] to ALL enemies.",
+  "T_GAINPWR": "Gain {Power:diff()} [gold]{PowerName}[/gold]."
+}

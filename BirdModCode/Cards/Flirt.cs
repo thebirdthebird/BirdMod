@@ -18,7 +18,7 @@ public class Flirt() : BirdModCard(2, CardType.Skill,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
         CardKeyword.Exhaust
     ];
-    
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<StrengthPower>(4m),
     ];
