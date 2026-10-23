@@ -1,8 +1,10 @@
 {
-  "BIRDMOD-TRIBAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Instinct|Instincts}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-TRIBAL_FEATHER.descriptionOLD": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Instinct|Instincts}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-TRIBAL_FEATHER.description": "After playing a card that costs {Energy:energyIcons()} or more, gain {VimPower:diff()} [gold]Vim[/gold].",
   "BIRDMOD-TRIBAL_FEATHER.flavor": "The only remnant of the tribe.",
   "BIRDMOD-TRIBAL_FEATHER.title": "Tribal Feather",
-  "BIRDMOD-RITUAL_FEATHER.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Ancestral Guidance|Ancestral Guidances}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-RITUAL_FEATHER.descriptionOLD": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Ancestral Guidance|Ancestral Guidances}[/gold] into your [gold]Hand[/gold].",
+  "BIRDMOD-RITUAL_FEATHER.description": "After playing a card that costs {Energy:energyIcons()} or more, gain {VimPower:diff()} [gold]Vim[/gold].",
   "BIRDMOD-RITUAL_FEATHER.flavor": "A feather from the tribe, infused with power beyond comprehension.",
   "BIRDMOD-RITUAL_FEATHER.title": "Ritual Feather",
   "BIRDMOD-PETAL_FEATHER.description": "While your HP is at or below 50%, you have [blue]{StrengthPower}[/blue] additional [gold]Dexterity[/gold].",

@@ -19,28 +19,33 @@ public class Weave() : BirdModCard(2,
 {
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<DodgePower>(1M)
+        // new PowerVar<DodgePower>(1M)
+        new BlockVar(12m, ValueProp.Move),
+        new PowerVar<VimPower>(2m)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 
         ?
         [
-            HoverTipFactory.FromPower<DodgePower>()
+            HoverTipFactory.FromPower<VimPower>()
         ] :
     [
         new HoverTip(new LocString("cards", "BIRDMOD-WEAVE.flavor")),
-       HoverTipFactory.FromPower<DodgePower>()
+       HoverTipFactory.FromPower<VimPower>()
     ];
     
     public override async Task SuperPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play, Creature oc)
     {
-        await PowerCmd.Apply<DodgePower>(choiceContext, oc, base.DynamicVars["DodgePower"].BaseValue, oc, this);
+        await CreatureCmd.GainBlock(oc, DynamicVars.Block, play);
+        await PowerCmd.Apply<VimPower>(choiceContext, oc, base.DynamicVars["VimPower"].BaseValue, oc, this);
     }
 
     protected override void OnUpgrade()
     {
-        this.AddKeyword(CardKeyword.Retain);
+        // this.AddKeyword(CardKeyword.Retain);
+        DynamicVars.Block.UpgradeValueBy(4m);
+        DynamicVars["VimPower"].UpgradeValueBy(1m);
     }
 }

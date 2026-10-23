@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqrhd5ulwllm8"]
+[gd_scene load_steps=6 format=3 uid="uid://bqrhd5ulwllm8"]
 
 [ext_resource type="Texture2D" uid="uid://cisq1etg3irn3" path="res://BirdMod/images/packed/compute-1.png.png" id="1_77mh8"]
 [ext_resource type="Texture2D" uid="uid://bbocmgmv8fy3n" path="res://BirdMod/images/packed/finishedgif-46.png.png" id="2_qj7uy"]
 [ext_resource type="Texture2D" uid="uid://buaa1wvnfjkmu" path="res://BirdMod/images/packed/finishedgif-47.png.png" id="3_j5hoy"]
+[ext_resource type="Texture2D" uid="uid://cko3k86ra11vx" path="res://BirdMod/images/packed/background.png" id="4_qj7uy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pmobn"]
 animations = [{
@@ -218,9 +219,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1239.548, 600.953)
+scale = Vector2(1.1128759, 1.1128759)
+texture = ExtResource("4_qj7uy")
+
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(1765.76, 790.1033)
-scale = Vector2(0.6, 0.6)
+position = Vector2(1725.9531, 811.3066)
+scale = Vector2(0.44967622, 0.4855744)
 sprite_frames = SubResource("SpriteFrames_pmobn")
 animation = &"idle"
 autoplay = "idle"

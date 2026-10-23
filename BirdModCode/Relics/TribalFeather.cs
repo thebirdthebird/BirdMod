@@ -13,6 +13,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Relics;
 public class TribalFeather() : BirdModRelic
@@ -26,14 +27,29 @@ public class TribalFeather() : BirdModRelic
     }
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CardsVar(1)
+        // new CardsVar(1)
+        // new PowerVar<VigorPower>(2m),
+        new EnergyVar(2),
+        new PowerVar<VimPower>(2m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Instinct>()
+        // HoverTipFactory.FromCard<Instinct>()
+        // HoverTipFactory.FromPower<VigorPower>(),
+        HoverTipFactory.FromPower<VimPower>()
     ];
     
+    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    {
+        if (cardPlay.Card.Owner == base.Owner && cardPlay.Resources.EnergyValue >= base.DynamicVars.Energy.IntValue)
+        {
+            Flash();
+            await PowerCmd.Apply<VimPower>(choiceContext, this.Owner.Creature, DynamicVars["VimPower"].BaseValue, this.Owner.Creature, null);
+        }
+    }
+    
+    /*
     public override async Task BeforeHandDraw(
         Player player,
         PlayerChoiceContext choiceContext,
@@ -47,5 +63,27 @@ public class TribalFeather() : BirdModRelic
             cards.Add(this.Owner.Creature.CombatState.CreateCard<Instinct>(this.Owner));
         await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, this.Owner);
     }
+    */
     
+    /*
+
+    public override async Task BeforeDamageReceived(
+        PlayerChoiceContext choiceContext,
+        Creature target,
+        Decimal amount,
+        ValueProp props,
+        Creature? dealer,
+        CardModel? cardSource)
+    {
+        if (dealer == null || dealer.Player == this.Owner || target != this.Owner.Creature || amount > 0 || !props.IsPoweredAttack())
+            return;
+        await PowerCmd.Apply<VigorPower>(choiceContext, this.Owner.Creature, DynamicVars["VigorPower"].BaseValue, this.Owner.Creature, null);
+    }
+    
+    public async Task Called(PlayerChoiceContext choiceContext)
+    {
+        await PowerCmd.Apply<VimPower>(choiceContext, this.Owner.Creature, DynamicVars["VimPower"].BaseValue, this.Owner.Creature, null);
+    }
+    
+    */
 }

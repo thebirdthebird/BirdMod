@@ -11,8 +11,8 @@
   "BIRDMOD-REFLECTION_POWER.smartDescription": "[gold]Your Reflection[/gold] draws [blue]7[/blue] cards every turn.\n[gold]Your Reflection[/gold] has a max energy of [blue]4[/blue].",
   "BIRDMOD-REFLECTION_POWER.title": "It's You, Only Stronger",
   
-  "BIRDMOD-DODGE_POWER.description": "Take 0 damage from the next enemy attack. Wears off at the start of your turn.[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
-  "BIRDMOD-DODGE_POWER.smartDescription": "Take 0 damage from the next [blue]{Amount}[/blue] enemy {Amount:plural:attack|attacks}. Wears off at the start of your turn.[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
+  "BIRDMOD-DODGE_POWER.description": "Take 0 damage from the next enemy attack. Wears off at the start of your turn.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
+  "BIRDMOD-DODGE_POWER.smartDescription": "Take 0 damage from the next [blue]{Amount}[/blue] enemy {Amount:plural:attack|attacks}. Wears off at the start of your turn.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
   "BIRDMOD-DODGE_POWER.title": "Dodge",
   
   "BIRDMOD-COUNTER_POWER.description": "When hit, deal damage back equal to the amount, then wears off.\n[font_size=14][i][color=#909090]Counter Art by Amayapolaris[/color][/i][/font_size]",

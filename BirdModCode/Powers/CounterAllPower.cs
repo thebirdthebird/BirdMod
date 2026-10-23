@@ -1,4 +1,5 @@
 ﻿using BirdMod.BirdModCode.Powers;
+using BirdMod.BirdModCode.Relics;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -30,7 +31,20 @@ public class CounterAllPower() : BirdModPower
             return;
         this.Flash();
         await CreatureCmd.Damage(choiceContext, this.CombatState.GetOpponentsOf(this.Owner), (Decimal)this.Amount,
-            ValueProp.Unpowered | ValueProp.SkipHurtAnim, this.Owner, (CardModel)null, (CardPlay)null);
+            ValueProp.Unpowered | ValueProp.SkipHurtAnim, this.Owner, (CardModel)null!, (CardPlay)null!);
+        /*
+        var feather = this.Owner.Player?.GetRelic<TribalFeather>();
+        if (feather != null)
+        {
+            // i created a function in the relic just to brute force this interaction
+            await feather.Called(choiceContext);
+        }
+        var ritual = this.Owner.Player?.GetRelic<RitualFeather>();
+        if (ritual != null)
+        {
+            await ritual.Called(choiceContext);
+        }
+        */
         await PowerCmd.Remove((PowerModel)this);
     }   
     

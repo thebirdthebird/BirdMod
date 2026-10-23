@@ -219,8 +219,8 @@ offset_bottom = 40.0
 [node name="Visuals" type="Node2D" parent="."]
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="Visuals"]
-position = Vector2(-32, -102.4)
-scale = Vector2(0.1, 0.1)
+position = Vector2(-24.790344, -77.37824)
+scale = Vector2(0.075, 0.075)
 sprite_frames = SubResource("SpriteFrames_xknwo")
 animation = &"idle"
 autoplay = "idle"
@@ -234,12 +234,12 @@ texture = ExtResource("1_pkdf1")
 
 [node name="Bounds" type="Control" parent="."]
 anchors_preset = 0
-offset_left = -128.03
-offset_top = -198.4
-offset_right = 95.97
+offset_left = -103.81406
+offset_top = -157.9339
+offset_right = 72.39133
 
 [node name="IntentPosition" type="Marker2D" parent="."]
-position = Vector2(0, -220)
+position = Vector2(0, -180)
 
 [node name="CenterPos" type="Marker2D" parent="."]
-position = Vector2(0, -102.4)
+position = Vector2(0, -82.63041)

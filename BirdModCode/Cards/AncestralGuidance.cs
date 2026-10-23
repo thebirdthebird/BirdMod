@@ -83,7 +83,8 @@ public class AncestralGuidance() : BirdModCard(0,
         
         RitualFeather? ritualFeather = this.Owner.GetRelic<RitualFeather>();
         if (ritualFeather == null) return;
-        int num = ritualFeather.TimesAncestralGuidancePlayed;
+        // int num = ritualFeather.TimesAncestralGuidancePlayed;
+        int num = 0;
         if (num >= 3)
             num = 3;
         
