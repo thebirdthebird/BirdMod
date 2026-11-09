@@ -19,7 +19,7 @@ public class Swipe() : BirdModCard(1, CardType.Attack,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(6, ValueProp.Move),
-        new RepeatVar(2)
+        new RepeatVar(1)
     ];
     
     protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<VimPower>();

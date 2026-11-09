@@ -18,7 +18,7 @@ public class Cower() : BirdModCard(2, CardType.Skill,
     CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(24m, ValueProp.Move),
+        new BlockVar(20m, ValueProp.Move),
         new PowerVar<WeakPower>(2),
         new PowerVar<DrawCardsNextTurnPower>(2m)
     ];
@@ -46,6 +46,6 @@ public class Cower() : BirdModCard(2, CardType.Skill,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(6m);
+        DynamicVars.Block.UpgradeValueBy(5m);
     }
 }

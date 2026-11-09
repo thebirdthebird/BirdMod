@@ -54,7 +54,7 @@ public class InciteViolence() : BirdModCard(1,
             {
                 cards.Add(CombatState.CreateCard<Talon>(creature.Player!));
             }
-            IReadOnlyList<CardPileAddResult> results = await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Draw, base.Owner, CardPilePosition.Random);
+            IReadOnlyList<CardPileAddResult> results = await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, base.Owner, CardPilePosition.Top);
             foreach (var item in results)
             {
                 CardCmd.Enchant<Adroit>(item.cardAdded, DynamicVars["Adroit"].IntValue);
@@ -68,7 +68,7 @@ public class InciteViolence() : BirdModCard(1,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Cards.UpgradeValueBy(1m);
-        base.DynamicVars["Adroit"].UpgradeValueBy(1m);
+        // base.DynamicVars.Cards.UpgradeValueBy(1m);
+        base.DynamicVars["Adroit"].UpgradeValueBy(4m);
     }
 }

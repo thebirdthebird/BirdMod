@@ -53,6 +53,6 @@ public class Concentrate() : BirdModCard(0,
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Energy.UpgradeValueBy(1m);
+        this.AddKeyword(CardKeyword.Innate);
     }
 }

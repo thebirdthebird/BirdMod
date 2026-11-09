@@ -15,7 +15,7 @@ public class Blink() : BirdModCard(1, CardType.Skill,
     CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<VimPower>(-8m),
+        new PowerVar<VimPower>(-5m),
         new CardsVar(5),
     ];
     
@@ -39,6 +39,7 @@ public class Blink() : BirdModCard(1, CardType.Skill,
 
     protected override void OnUpgrade()
     {
+        DynamicVars["Vim"].UpgradeValueBy(1m);
         base.DynamicVars.Cards.UpgradeValueBy(2m);
     }
 }

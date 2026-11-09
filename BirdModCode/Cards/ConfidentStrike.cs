@@ -23,7 +23,7 @@ public class ConfidentStrike() : BirdModCard(1,
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Strike };
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(9, ValueProp.Move),
-        new RepeatVar(2)
+        new RepeatVar(1)
     ];
 
     protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<VigorPower>();

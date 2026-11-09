@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Models.Enchantments;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class GoPrimal() : BirdModCard(1,
+public class GoPrimal() : BirdModCard(0,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self), ITomeCard
 {
