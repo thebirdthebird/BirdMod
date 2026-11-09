@@ -34,7 +34,7 @@ public class StormfrontPower() : BirdModPower
         if (cardSource == null) return;
         if (Owner.CombatState == null) return;
         IEnumerable<Creature> enumerable = from c in base.CombatState.GetTeammatesOf(Owner)
-            where c != null && c.IsAlive && c.IsPlayer
+            where c != null && c.IsAlive && c.IsPlayer && c != Owner
             select c;
         foreach (Creature creature in enumerable)
         {

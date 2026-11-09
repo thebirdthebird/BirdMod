@@ -16,7 +16,7 @@ namespace BirdMod.BirdModCode.Cards;
 
   
 public class Cut() : BirdModCard(2, CardType.Attack,
-    CardRarity.Uncommon, TargetType.AnyEnemy)
+    CardRarity.Common, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(3, ValueProp.Move),

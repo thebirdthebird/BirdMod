@@ -14,24 +14,26 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace BirdMod.BirdModCode.Cards;
 
 public class LetLoose() : BirdModCard(0,
-    CardType.Attack, CardRarity.Uncommon,
+    CardType.Attack, CardRarity.Event,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(4, ValueProp.Move),
+        new DamageVar(3, ValueProp.Move),
         new RepeatVar(2),
+        /*
         new PowerVar<StaggeringPower>(5m),
         new IntVar("StaggeringHits", 3m)
+        */
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?
         [
-            HoverTipFactory.FromPower<StaggeringPower>()
+            //HoverTipFactory.FromPower<StaggeringPower>()
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-LET_LOOSE.flavor")),
-            HoverTipFactory.FromPower<StaggeringPower>()
+            //HoverTipFactory.FromPower<StaggeringPower>()
         ];
 
     public override async Task SuperPlay(
@@ -46,11 +48,13 @@ public class LetLoose() : BirdModCard(0,
             .HelpTheCmd(oc, play, this, Owner)
             .WithHitCount(DynamicVars.Repeat.IntValue)
             .Execute(choiceContext);
+        /*
         StaggeringPower? staggering = await PowerCmd.Apply<StaggeringPower>(choiceContext, oc, this.DynamicVars["StaggeringPower"].BaseValue, oc, this, false);
         if (staggering != null)
         {
             staggering.SetHits(this.DynamicVars["StaggeringHits"].IntValue);
         }
+        */
     }
 
     protected override void OnUpgrade()

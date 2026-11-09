@@ -20,7 +20,8 @@ public class Weave() : BirdModCard(2,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         // new PowerVar<DodgePower>(1M)
-        new BlockVar(12m, ValueProp.Move),
+        new BlockVar(6m, ValueProp.Move),
+        new RepeatVar(2),
         new PowerVar<VimPower>(2m)
     ];
 
@@ -38,14 +39,17 @@ public class Weave() : BirdModCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play, Creature oc)
     {
-        await CreatureCmd.GainBlock(oc, DynamicVars.Block, play);
+        for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
+        {
+            await CreatureCmd.GainBlock(oc, DynamicVars.Block, play);
+        }
         await PowerCmd.Apply<VimPower>(choiceContext, oc, base.DynamicVars["VimPower"].BaseValue, oc, this);
     }
 
     protected override void OnUpgrade()
     {
         // this.AddKeyword(CardKeyword.Retain);
-        DynamicVars.Block.UpgradeValueBy(4m);
+        DynamicVars.Block.UpgradeValueBy(2m);
         DynamicVars["VimPower"].UpgradeValueBy(1m);
     }
 }

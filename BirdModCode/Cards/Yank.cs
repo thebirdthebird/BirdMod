@@ -10,13 +10,15 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class Yank() : BirdModCard(1, CardType.Skill,
+public class Yank() : BirdModCard(0, CardType.Skill,
     CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new IntVar("IncHits", 1m),
         new IntVar("IncDmg", 12m)
     ];
+    
+    
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?

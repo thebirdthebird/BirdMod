@@ -25,7 +25,7 @@ public class DormantDagger() : BirdModCard(1,
     CardType.Attack, CardRarity.Quest,
     TargetType.AnyEnemy)
 {
-    public const int MaxKills = 6;
+    public const int MaxKills = 5;
 
     private const string _killsKey = "Kills";
 
@@ -36,7 +36,7 @@ public class DormantDagger() : BirdModCard(1,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(10, ValueProp.Move),
-        new DynamicVar("Kills", 6m)
+        new DynamicVar("Kills", 5m)
     ];
 
     public override Texture2D? CustomFrame => ResourceLoader.Load<Texture2D>("res://images/atlases/ui_atlas.sprites/card/card_frame_quest_s.tres");

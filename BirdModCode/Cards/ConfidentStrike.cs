@@ -11,6 +11,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Events;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Cards;
@@ -25,17 +26,17 @@ public class ConfidentStrike() : BirdModCard(1,
         new RepeatVar(2)
     ];
 
-    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<DodgePower>();
+    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<VigorPower>();
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?
         [
-            HoverTipFactory.FromPower<DodgePower>()
+            HoverTipFactory.FromPower<VigorPower>()
         ] :
     [
         new HoverTip(new LocString("cards", "BIRDMOD-CONFIDENT_STRIKE.flavor")),
         new HoverTip(new LocString("cards", "BIRDMOD-CONFIDENT_STRIKE.credits")),
-        HoverTipFactory.FromPower<DodgePower>()
+        HoverTipFactory.FromPower<VigorPower>()
     ];
 
     public override async Task SuperPlay(
@@ -43,7 +44,7 @@ public class ConfidentStrike() : BirdModCard(1,
         CardPlay play, Creature oc)
     {
         int num = 1;
-        if (oc.HasPower<DodgePower>())
+        if (oc.HasPower<VigorPower>())
             num += DynamicVars.Repeat.IntValue;
         if (play != null)
             if (play.Target == null)

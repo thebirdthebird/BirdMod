@@ -14,12 +14,12 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace BirdMod.BirdModCode.Cards;
 
   
-public class Flatter() : BirdModCard(2,
+public class Flatter() : BirdModCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(10, ValueProp.Move),
+        new BlockVar(5, ValueProp.Move),
         new PowerVar<DarkShacklesPower>(2m)
     ];
     

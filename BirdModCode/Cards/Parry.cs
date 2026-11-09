@@ -15,7 +15,7 @@ public class Parry() : BirdModCard(2, CardType.Skill,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<DodgePower>(1m),
-        new PowerVar<CounterPower>(6m)
+        new PowerVar<CounterPower>(12m)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 
@@ -40,7 +40,7 @@ public class Parry() : BirdModCard(2, CardType.Skill,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars["CounterPower"].UpgradeValueBy(4m);
+        base.DynamicVars["CounterPower"].UpgradeValueBy(6m);
         this.AddKeyword(CardKeyword.Retain);
     }
 }

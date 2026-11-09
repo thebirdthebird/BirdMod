@@ -7,35 +7,45 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace BirdMod.BirdModCode.Cards;
 
 public class GiantToppler() : BirdModCard(1,
-    CardType.Skill, CardRarity.Rare,
-    TargetType.AnyEnemy)
+    CardType.Power, CardRarity.Rare,
+    TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<StaggeringPower>(20m),
-        new IntVar("StaggeringHits", 10m)
+        // new PowerVar<StaggeringPower>(20m),
+        //new IntVar("StaggeringHits", 10m)
+        
+        new PowerVar<GiantTopplerPower>(2m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 
         ?
         [
-            HoverTipFactory.FromPower<StaggeringPower>()
+            HoverTipFactory.FromPower<WeakPower>(),
+            HoverTipFactory.FromPower<VulnerablePower>()
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-GIANT_TOPPLER.flavor")),
-            HoverTipFactory.FromPower<StaggeringPower>()
+            HoverTipFactory.FromPower<WeakPower>(),
+            HoverTipFactory.FromPower<VulnerablePower>()
         ];
     
     public override async Task SuperPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play, Creature oc)
     {
-        if (play != null)
+        
+        await PowerCmd.Apply<GiantTopplerPower>(choiceContext, oc, this.DynamicVars["GiantTopplerPower"].BaseValue, oc, this, false);
+
+        /*
+         if (play != null)
             if (play.Target == null)
                 return;
+         
         List<StaggeringPower> list = new List<StaggeringPower>();
         var ll = play?.Target == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target];
         foreach (var guy in ll)
@@ -50,11 +60,14 @@ public class GiantToppler() : BirdModCard(1,
         {
             staggering.SetHits(this.DynamicVars["StaggeringHits"].IntValue);
         }
+        */
     }
 
     protected override void OnUpgrade()
     {
         base.EnergyCost.UpgradeBy(-1);
+        /*
         base.DynamicVars["StaggeringPower"].UpgradeValueBy(-5m);
+        */
     }
 }

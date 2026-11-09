@@ -13,11 +13,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace BirdMod.BirdModCode.Cards;
 
 public class Bolster() : BirdModCard(1,
-    CardType.Skill, CardRarity.Common,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(5m, ValueProp.Move),
+        new BlockVar(6m, ValueProp.Move),
         new RepeatVar(2)
     ];
     

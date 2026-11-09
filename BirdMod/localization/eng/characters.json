@@ -1,7 +1,7 @@
 {
-  "BIRDMOD-BIRD_MOD.aromaPrinciple": "Lore",
-  "BIRDMOD-BIRD_MOD.banter.alive.endTurnPing": "Squeak!",
-  "BIRDMOD-BIRD_MOD.banter.dead.endTurnPing": "...",
+  "BIRDMOD-BIRD_MOD.aromaPrinciple": "[outline_size=8][outline_color=white][color=#000000]I will appease my[/color][/outline_color][/outline_size] [outline_size=8][outline_color=dark_orange][shake rate=20.0 level=8 connected=1]Ancestors.[/shake][/outline_color][/outline_size]",
+  "BIRDMOD-BIRD_MOD.banter.alive.endTurnPing": "[outline_size=8][outline_color=white][color=#000000]Squeak![/color][/outline_color][/outline_size]",
+  "BIRDMOD-BIRD_MOD.banter.dead.endTurnPing": "[outline_size=8][outline_color=white][color=#000000]...[/color][/outline_color][/outline_size]",
   "BIRDMOD-BIRD_MOD.cardsModifierDescription": "Bird cards will now appear in rewards and shops.",
   "BIRDMOD-BIRD_MOD.cardsModifierTitle": "Bird Cards",
   "BIRDMOD-BIRD_MOD.description": "A birdlike raptorlike creature lost in the Spire.\nSpeedy, pretty, but frail.",  

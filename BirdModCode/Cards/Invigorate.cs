@@ -16,7 +16,7 @@ public class Invigorate() : BirdModCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CardsVar(2),
-        new PowerVar<VigorPower>(2m)
+        new PowerVar<VigorPower>(3m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat

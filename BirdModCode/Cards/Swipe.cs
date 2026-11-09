@@ -9,6 +9,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Cards;
@@ -21,16 +22,16 @@ public class Swipe() : BirdModCard(1, CardType.Attack,
         new RepeatVar(2)
     ];
     
-    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<DodgePower>();
+    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<VimPower>();
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?
         [
-            HoverTipFactory.FromPower<DodgePower>()
+            HoverTipFactory.FromPower<VimPower>()
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-SWIPE.flavor")),
-            HoverTipFactory.FromPower<DodgePower>()
+            HoverTipFactory.FromPower<VimPower>()
         ];
 
     public override async Task SuperPlay(
@@ -38,7 +39,7 @@ public class Swipe() : BirdModCard(1, CardType.Attack,
         CardPlay play, Creature oc)
     {
         int num = 1;
-        if (oc.HasPower<DodgePower>())
+        if (oc.HasPower<VimPower>())
         {
             num += DynamicVars.Repeat.IntValue; 
         }

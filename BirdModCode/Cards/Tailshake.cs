@@ -17,7 +17,7 @@ public class Tailshake() : BirdModCard(1,
     TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<VimPower>(-6M),
+        new PowerVar<VimPower>(-5M),
         new PowerVar<DarkShacklesPower>(5M)
     ];
     

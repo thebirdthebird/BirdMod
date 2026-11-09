@@ -150,7 +150,7 @@ public class Spirit() : CustomPetModel(visibleHp: false)
 			{
 				if (c.DynamicVars.Values.OfType<RepeatVar>().Any() && !flag)
 				{
-					if (c is ConfidentStrike && this.Creature.HasPower<DodgePower>())
+					if (c is ConfidentStrike && (this.Creature.HasPower<CounterPower>() || Creature.HasPower<CounterAllPower>()))
 					{
 						intents.Add(new MultiAttackIntent(c.DynamicVars.Damage.IntValue,
 							1 + c.DynamicVars.Repeat.IntValue));

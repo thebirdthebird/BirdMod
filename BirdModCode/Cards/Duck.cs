@@ -27,6 +27,7 @@ public class Duck() : BirdModCard(1, CardType.Skill,
         ] :
         [
             new HoverTip(new LocString("cards", "BIRDMOD-DUCK.flavor")),
+            new HoverTip(new LocString("cards", "BIRDMOD-DUCK.credits")),
             HoverTipFactory.FromPower<CounterPower>()
         ];
 

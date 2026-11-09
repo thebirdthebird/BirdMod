@@ -15,12 +15,12 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class QuickStrike() : BirdModCard(1,
+public class QuickStrike() : BirdModCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(8, ValueProp.Move),
+        new DamageVar(5, ValueProp.Move),
         new EnergyVar(1),
     ];
     

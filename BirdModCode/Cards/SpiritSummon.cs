@@ -48,7 +48,7 @@ public class SpiritSummon() : BirdModCard(1,
         var h = (await PlayerCmd.AddPet<Spirit>(Owner)) ?? throw new InvalidOperationException();
         var flower = h.Monster as Spirit ?? throw new InvalidOperationException();
         var d = Owner.Deck.Cards.ToList();
-        List<BirdModCard> help = [.. d.Where(c => c is BirdModCard && c.MultiplayerConstraint != CardMultiplayerConstraint.MultiplayerOnly && c is not SpryStep & c is not Tailwind && c is not GoFeral && c is not Pluck && c is not PackTactics && c is not AwakenedForm && !c.EnergyCost.CostsX).OfType<BirdModCard>()];
+        List<BirdModCard> help = [.. d.Where(c => c is BirdModCard && c.MultiplayerConstraint != CardMultiplayerConstraint.MultiplayerOnly && c is not SpryStep & c is not Tailwind && c is not GoFeral && c is not Pluck && c is not PackTacticsOld && c is not AwakenedForm && !c.EnergyCost.CostsX).OfType<BirdModCard>()];
         foreach (var c in help)
         {
             c.HELP = true;

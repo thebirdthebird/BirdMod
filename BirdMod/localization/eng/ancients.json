@@ -30,7 +30,7 @@
   "THE_ARCHITECT.talk.BIRDMOD-BIRD_MOD.2-4.char": "[outline_size=8][outline_color=white][color=#000000][shake rate=30.0 level=8 connected=0]...!!![/shake][/color][/outline_color][/outline_size]",
   "THE_ARCHITECT.talk.BIRDMOD-BIRD_MOD.2-attack": "Both",
 
-  "THE_ARCHITECT.talk.BIRDMOD_BIRD_MOD.3-0.char": "[outline_size=8][outline_color=white][color=#000000]...What could possibly be so important?",
+  "THE_ARCHITECT.talk.BIRDMOD_BIRD_MOD.3-0.char": "[outline_size=8][outline_color=white][color=#000000]...What could possibly be so important?[/color][/outline_color][/outline_size]",
   "THE_ARCHITECT.talk.BIRDMOD_BIRD_MOD.3-0.next": "Continue",
   "THE_ARCHITECT.talk.BIRDMOD_BIRD_MOD.3-1.ancient": "What was that?",
   "THE_ARCHITECT.talk.BIRDMOD_BIRD_MOD.3-1.next": "Continue",

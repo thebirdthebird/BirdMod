@@ -152,7 +152,7 @@ public class ReflectionEnemy : CustomMonsterModel
 	    }
 	    for (int i = 0; i < rng.NextInt(8, 12); i++)
 	    {
-		    var c = ModelDb.CardPool<BirdModCardPool>().AllCards.Where(c => c.Rarity == CardRarity.Rare && c.MultiplayerConstraint != CardMultiplayerConstraint.MultiplayerOnly && c is not Flirt && c is not GoFeral && c is not Pluck && c is not PackTactics && c is not AwakenedForm && !c.EnergyCost.CostsX).TakeRandom(1, rng).First();
+		    var c = ModelDb.CardPool<BirdModCardPool>().AllCards.Where(c => c.Rarity == CardRarity.Rare && c.MultiplayerConstraint != CardMultiplayerConstraint.MultiplayerOnly && c is not Flirt && c is not GoFeral && c is not Pluck && c is not PackTacticsOld && c is not AwakenedForm && !c.EnergyCost.CostsX).TakeRandom(1, rng).First();
 		    if (c is BirdModCard card)
 			    PseudoDeck.Add(PseudoCreateAlt(card));
 		    else
@@ -196,7 +196,7 @@ public class ReflectionEnemy : CustomMonsterModel
 			{
 				if (c.DynamicVars.Values.OfType<RepeatVar>().Any() && !flag)
 				{
-					if (c is ConfidentStrike && this.Creature.HasPower<DodgePower>())
+					if (c is ConfidentStrike && (this.Creature.HasPower<CounterPower>() || Creature.HasPower<CounterAllPower>()))
 					{
 						intents.Add(new MultiAttackIntent(c.DynamicVars.Damage.IntValue,
 							1 + c.DynamicVars.Repeat.IntValue));

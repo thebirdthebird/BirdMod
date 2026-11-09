@@ -11,8 +11,8 @@
   "BIRDMOD-REFLECTION_POWER.smartDescription": "[gold]Your Reflection[/gold] draws [blue]7[/blue] cards every turn.\n[gold]Your Reflection[/gold] has a max energy of [blue]4[/blue].",
   "BIRDMOD-REFLECTION_POWER.title": "It's You, Only Stronger",
   
-  "BIRDMOD-DODGE_POWER.description": "Take 0 damage from the next enemy attack. Wears off at the start of your turn.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
-  "BIRDMOD-DODGE_POWER.smartDescription": "Take 0 damage from the next [blue]{Amount}[/blue] enemy {Amount:plural:attack|attacks}. Wears off at the start of your turn.\n[font_size=14][i][color=#909090]Staggering Art by Luna[/color][/i][/font_size]",
+  "BIRDMOD-DODGE_POWER.description": "Take 0 damage from the next enemy attack. Wears off at the start of your turn.\n[font_size=14][i][color=#909090]Dodge Art by Luna[/color][/i][/font_size]",
+  "BIRDMOD-DODGE_POWER.smartDescription": "Take 0 damage from the next [blue]{Amount}[/blue] enemy {Amount:plural:attack|attacks}. Wears off at the start of your turn.\n[font_size=14][i][color=#909090]Dodge Art by Luna[/color][/i][/font_size]",
   "BIRDMOD-DODGE_POWER.title": "Dodge",
   
   "BIRDMOD-COUNTER_POWER.description": "When hit, deal damage back equal to the amount, then wears off.\n[font_size=14][i][color=#909090]Counter Art by Amayapolaris[/color][/i][/font_size]",
@@ -133,5 +133,13 @@
 
   "BIRDMOD-SPIRIT_SUMMON_POWER.description": "Plays cards at the end of the Player turn.\nHas [blue]2[/blue] Max Energy and draws [blue]4[/blue] cards per turn.\nAny [gold]Block[/gold] or Power gained is also applied to you.",
   "BIRDMOD-SPIRIT_SUMMON_POWER.smartDescription": "Plays cards at the end of the Player turn.\nHas [blue]2[/blue] Max Energy and draws [blue]4[/blue] cards per turn.\nAny [gold]Block[/gold] or Power gained is also applied to you.",
-  "BIRDMOD-SPIRIT_SUMMON_POWER.title": "Spirit Summon"
+  "BIRDMOD-SPIRIT_SUMMON_POWER.title": "Spirit Summon",
+
+  "BIRDMOD-CHOSEN_PACK_TACTIC_POWER.description": "Play a copy of the chosen card every turn.",
+  "BIRDMOD-CHOSEN_PACK_TACTIC_POWER.smartDescription": "Play a copy of [gold]{Card}[/gold] at the start of every turn.",
+  "BIRDMOD-CHOSEN_PACK_TACTIC_POWER.title": "Pack Tactic: {Card}",
+
+  "BIRDMOD-GIANT_TOPPLER_POWER.description": "After [gold]Staggering[/gold] is triggered, apply [gold]Weak[/gold] and [gold]Vulnerable[/gold].",
+  "BIRDMOD-GIANT_TOPPLER_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered, apply [blue]{Amount}[/blue] [gold]Weak[/gold] and [gold]Vulnerable[/gold].",
+  "BIRDMOD-GIANT_TOPPLER_POWER.title": "Giant Toppler"
 }

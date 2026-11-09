@@ -19,8 +19,9 @@
   "BIRDMOD-IMBUE_EVENT.pages.PLAIN.description": "You ignored the camp and kept walking.\nCouldn't have been [i]that[/i] important.",
   "BIRDMOD-IMBUE_EVENT.title": "Abandoned Camp",
   "BIRDMOD-IMBUE_EVENT.pages.INITIAL.description": "You come across what looks like an [sine]abandoned camp site[/sine].\nCuriously, something in some nearby rubble feels like it's [jitter]pulling[/jitter] at you...\n\nThough, the feeling is elusive and hard to place, of course.",
-  
-  
+
+  "COLORFUL_PHILOSOPHERS.pages.INITIAL.options.CARD_POOL∴THEBIRD-THE_BIRD_CARD_POOL.title": "Crimson",
+  "COLORFUL_PHILOSOPHERS.pages.INITIAL.options.CARD_POOL∴THEBIRD-THE_BIRD_CARD_POOL.description": "Obtain [blue]{Cards}[/blue] Bird {Cards:plural:card|cards}",
   
   
   

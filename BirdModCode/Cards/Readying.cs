@@ -15,7 +15,7 @@ public class Readying() : BirdModCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<ReadyingPower>(4m)
+        new PowerVar<ReadyingPower>(7m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 

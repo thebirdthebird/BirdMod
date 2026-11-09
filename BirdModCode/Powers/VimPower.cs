@@ -17,6 +17,8 @@ public class VimPower() : BirdModPower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
 
+    public override bool AllowNegative => true;
+    
     protected override object InitInternalData() => (object) new VimPower.Data();
 
     public override Task BeforeBlockGained(Creature creature, decimal amount, ValueProp props, CardModel? cardSource)
@@ -25,7 +27,7 @@ public class VimPower() : BirdModPower
         if (creature != this.Owner || !props.IsPoweredCardOrMonsterMoveBlock())
             return Task.CompletedTask;
         VimPower.Data internalData = this.GetInternalData<VimPower.Data>();
-        if (internalData.thisWillBeCardModel != null || cardSource != null && !(cardSource is CardModel) || !props.IsPoweredAttack())
+        if (internalData.thisWillBeCardModel != null || cardSource != null && !(cardSource is CardModel) && cardSource.Owner == this.Owner.Player || !props.IsPoweredAttack())
             return Task.CompletedTask;
         internalData.thisWillBeCardModel = cardSource;
         internalData.amountWhenBlockStarted = this.Amount;

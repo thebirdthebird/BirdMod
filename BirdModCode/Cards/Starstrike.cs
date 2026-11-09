@@ -22,18 +22,18 @@ public class Starstrike() : BirdModCard(2,
         new RepeatVar(4),
     ];
     
-    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<DodgePower>();
+    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<CounterPower>() || Owner.Creature.HasPower<CounterAllPower>();
     
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Strike };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat 
         ?
         [
-            HoverTipFactory.FromPower<DodgePower>()
+            HoverTipFactory.FromPower<CounterPower>()
         ] :
         [
             new HoverTip(new LocString("cards", ("BIRDMOD-STARSTRIKE.flavor"))),
-            HoverTipFactory.FromPower<DodgePower>()
+            HoverTipFactory.FromPower<CounterPower>()
         ];
 
     public override async Task SuperPlay(
@@ -43,7 +43,7 @@ public class Starstrike() : BirdModCard(2,
         if (play != null)
             if (play.Target == null)
                 return;
-        if (oc.HasPower<DodgePower>() && play != null)
+        if ((oc.HasPower<CounterPower>() || oc.HasPower<CounterAllPower>()) && play != null)
         {
             if (CombatState == null) return;
             await DamageCmd.Attack(DynamicVars.Damage.BaseValue)

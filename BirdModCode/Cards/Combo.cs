@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace BirdMod.BirdModCode.Cards;
 
-public class Combo() : BirdModCard(3, CardType.Skill,
+public class Combo() : BirdModCard(2, CardType.Skill,
     CardRarity.Rare, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [

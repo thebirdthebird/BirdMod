@@ -16,7 +16,7 @@ public class Counter() : BirdModCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<CounterPower>(12m)
+        new PowerVar<CounterPower>(13m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
@@ -38,6 +38,6 @@ public class Counter() : BirdModCard(1,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars["CounterPower"].UpgradeValueBy(6m);
+        base.DynamicVars["CounterPower"].UpgradeValueBy(7m);
     }
 }
