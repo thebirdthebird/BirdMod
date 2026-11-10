@@ -39,7 +39,7 @@ public class Blink() : BirdModCard(1, CardType.Skill,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Vim"].UpgradeValueBy(1m);
+        DynamicVars["VimPower"].UpgradeValueBy(1m);
         base.DynamicVars.Cards.UpgradeValueBy(2m);
     }
 }
