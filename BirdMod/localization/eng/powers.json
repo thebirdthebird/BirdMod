@@ -20,7 +20,7 @@
   "BIRDMOD-COUNTER_POWER.title": "Counter",
   
   "BIRDMOD-AWAIT_POWER.description": "At the start of your turn, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
-  "BIRDMOD-AWAIT_POWER.smartDescription": "At the start of your turn {Amount:plural:|for {} turns}, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
+  "BIRDMOD-AWAIT_POWER.smartDescription": "At the start of your turn{Amount:plural:| for {} turns}, gain [gold]Counter[/gold] equal to unused [gold]Block[/gold].",
   "BIRDMOD-AWAIT_POWER.title": "Await",
   
   "BIRDMOD-READYING_POWER.description": "Gain [gold]Counter[/gold] equal to stack amount at the start of your turn.",

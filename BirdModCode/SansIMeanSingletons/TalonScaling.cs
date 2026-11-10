@@ -44,7 +44,12 @@ public class TalonScaling() : CustomSingletonModel(HookType.Combat)
             
         return base.AfterCardGeneratedForCombat(card, creator);
     }
-    
+
+    public override async Task BeforeCombatStart()
+    {
+        _amountOfTimesScaled = 0;
+    }
+
     public override async Task AfterCombatEnd(CombatRoom _)
     {
         _amountOfTimesScaled = 0;
