@@ -15,8 +15,9 @@ namespace BirdMod.BirdModCode.Models;
 internal static class NCharacterSelectScreenSelectCharacterPatch
 {
     [HarmonyPostfix]
-    internal static void Postfix(CharacterModel characterModel)
+    internal static void Postfix(NCharacterSelectButton charSelectButton)
     {
+        CharacterModel? characterModel = charSelectButton.Character;
         if (characterModel is Character.BirdMod && !BirdModConfig.UploadMetricsFtueSeen)
             FtueMetricsCollectionForm.CreateAndShowDataCollectionForm();
     }

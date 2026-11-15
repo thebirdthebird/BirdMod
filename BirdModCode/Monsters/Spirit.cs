@@ -36,7 +36,7 @@ using MegaCrit.Sts2.Core.Settings;
 
 namespace BirdMod.BirdModCode.Monsters;
 
-public class Spirit() : CustomPetModel(visibleHp: false)
+public class Spirit() : CustomPetModel(interactable: true)
 {
 	public override int MinInitialHp => AscensionHelper.GetValueIfAscension(AscensionLevel.ToughEnemies, 166, 150);
 
@@ -570,7 +570,7 @@ public class Spirit() : CustomPetModel(visibleHp: false)
 					}
 				}
 				
-				BranchingPlayerChoiceContext branchingPlayerChoiceContext = new BranchingPlayerChoiceContext(c, LocalContext.NetId.Value, GameActionType.Combat, choiceContext);
+				BranchingPlayerChoiceContext branchingPlayerChoiceContext = new BranchingPlayerChoiceContext(c, LocalContext.NetId.Value, choiceContext);
 				branchingPlayerChoiceContext.PushModel(c);
 				await c.SuperPlay(branchingPlayerChoiceContext, null, Creature);
 				if (Creature.IsDead)

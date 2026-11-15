@@ -22,10 +22,11 @@ public class PackTactics() : BirdModCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play, Creature oc)
     {
-        var selection = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(base.Owner), base.Owner, new CardSelectorPrefs(SelectionScreenPrompt, DynamicVars.Cards.IntValue, DynamicVars.Cards.IntValue))).ToList();
+        var selection = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(base.Owner), base.Owner, new CardSelectorPrefs(SelectionScreenPrompt, DynamicVars.Cards.IntValue, DynamicVars.Cards.IntValue), filter: (c) => c.Type != CardType.Power && !c.Keywords.Contains(CardKeyword.Exhaust))).ToList();
         foreach (var card in selection)
         {
-            await CardCmd.AutoPlay(choiceContext, card, null!);
+            // await CardCmd.AutoPlay(choiceContext, card, null!);
+            // json : "Play {Cards:plural:it|them}."
             if (card.Keywords.Contains(CardKeyword.Exhaust) || card.Type == CardType.Power) continue;
             await CardCmd.Exhaust(choiceContext, card);
             var power = await PowerCmd.Apply<ChosenPackTacticPower>(choiceContext, base.Owner.Creature, 1m,

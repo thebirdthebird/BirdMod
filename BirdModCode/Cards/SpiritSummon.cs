@@ -58,7 +58,7 @@ public class SpiritSummon() : BirdModCard(1,
         if (room?.GetCreatureNode(flower.Creature) is { } node && room.GetCreatureNode(Owner.Creature) is { } owner)
         {
             node.Position = owner.Position + Vector2.Right * (owner.Hitbox.Size.X * 0.5f + 160f);
-            room.SetCreatureIsInteractable(flower.Creature, true);
+            node.IsInteractable = true;
         }
         await flower.OnSummon();
         return flower.Creature;

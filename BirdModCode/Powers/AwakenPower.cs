@@ -47,10 +47,12 @@ public class AwakenPower() : BirdModPower
         return (creature != Owner);
     }
     
+    /*
     public override bool ShouldStopCombatFromEnding()
     {
         return true;
     }
+    */
     
     public override bool ShouldDieLate(Creature creature)
     {

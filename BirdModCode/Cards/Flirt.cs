@@ -20,17 +20,20 @@ public class Flirt() : BirdModCard(2, CardType.Skill,
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<StrengthPower>(4m),
+        // new PowerVar<StrengthPower>(4m),
+        new PowerVar<WeakPower>(5m)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsInCombat
         ?
         [
-            HoverTipFactory.FromPower<StrengthPower>()
+            // HoverTipFactory.FromPower<StrengthPower>()
+            HoverTipFactory.FromPower<WeakPower>()
         ] :
     [
         new HoverTip(new LocString("cards", "BIRDMOD-FLIRT.flavor")),
-        HoverTipFactory.FromPower<StrengthPower>(),
+        // HoverTipFactory.FromPower<StrengthPower>(),
+        HoverTipFactory.FromPower<WeakPower>()
     ];
 
     public override async Task SuperPlay(
@@ -40,11 +43,14 @@ public class Flirt() : BirdModCard(2, CardType.Skill,
         if (play != null)
             if (play.Target == null)
                 return;
-        await PowerCmd.Apply<StrengthPower>(choiceContext, play?.Target == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], -this.DynamicVars["StrengthPower"].BaseValue, oc, (CardModel) this);
+        // await PowerCmd.Apply<StrengthPower>(choiceContext, play?.Target == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], -this.DynamicVars["StrengthPower"].BaseValue, oc, (CardModel) this);
+        await PowerCmd.Apply<WeakPower>(choiceContext, play?.Target == null ? oc.CombatState.GetOpponentsOf(oc) : [play.Target], this.DynamicVars["WeakPower"].BaseValue, oc, (CardModel) this);
+
     }
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars["StrengthPower"].UpgradeValueBy(2m);
+        // base.DynamicVars["StrengthPower"].UpgradeValueBy(2m);
+        DynamicVars["WeakPower"].UpgradeValueBy(3m);
     }
 }

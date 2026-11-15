@@ -34,9 +34,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.4.5" PrivateAssets="All" />
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.4.8" PrivateAssets="All" />
         <PackageReference Include="Krafs.Publicizer" Version="2.3.2" PrivateAssets="All" />
-        <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="0.1.9" />
+        <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="0.2.1" />
         <!-- Generates a .pck file when building if only using simple assets. May not work on all setups. Uncomment to test. -->
         <!-- <PackageReference Include="BSchneppe.StS2.PckPacker" Version="0.1.1" PrivateAssets="All" /> -->
         <AdditionalFiles Include="BirdMod/localization/**/*.json"/> <!-- Used by analyzer -->

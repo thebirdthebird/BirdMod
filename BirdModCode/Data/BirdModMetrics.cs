@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Map;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Platform;
 using MegaCrit.Sts2.Core.Rooms;
+using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.Runs.History;
 using MegaCrit.Sts2.Core.Runs.Metrics;
 using MegaCrit.Sts2.Core.Saves;
@@ -109,6 +110,7 @@ public static class BirdModMetrics
         var progress = SaveManager.Instance.Progress;
         return new RunMetrics
         {
+            GameMode = run.GameMode.ToString(),
             Ascension = run.Ascension,
             TotalPlaytime = progress.TotalPlaytime,
             TotalWinRate = progress.Wins / (float)progress.NumberOfRuns,
