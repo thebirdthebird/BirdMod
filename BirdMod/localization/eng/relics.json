@@ -21,5 +21,7 @@
   "BIRDMOD-AEROGEL_CALENDAR.title": "Aerogel Calendar",
   "BIRDMOD-TALON_PACK.description": "Upon pickup, add [blue]1[/blue] [gold]Talon[/gold] to your Deck enchanted with [gold]Adroit[/gold] [blue]{Adroit}[/blue].",
   "BIRDMOD-TALON_PACK.flavor": "[outline_size=8][outline_color=white][color=#000000]\"Even though it looks like a toy, it's scarily tough and sharp.\n...I feel cool holding it.\"[/color][/outline_color][/outline_size]",
-  "BIRDMOD-TALON_PACK.title": "Talon Pack"
+  "BIRDMOD-TALON_PACK.title": "Talon Pack",
+  
+  "SEA_GLASS.BIRDMOD-BIRD_MOD.title": "Maroon Glass"
 }

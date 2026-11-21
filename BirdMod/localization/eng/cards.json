@@ -363,9 +363,10 @@
   "BIRDMOD-IRON_WING.title": "Iron Wing",
   "BIRDMOD-IRON_WING.flavor": "Iron Wave 2: Yuri Boogaloo",
 
-  "BIRDMOD-COWER.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {WeakPower:diff()} [gold]Weak[/gold].\nNext turn, draw {DrawCardsNextTurnPower:diff()} {DrawCardsNextTurnPower:plural:card|cards}.",
+  "BIRDMOD-COWER.descriptionOLD": "Gain {Block:diff()} [gold]Block[/gold].\nGain {WeakPower:diff()} [gold]Weak[/gold].\nNext turn, draw {DrawCardsNextTurnPower:diff()} {DrawCardsNextTurnPower:plural:card|cards}.",
+  "BIRDMOD-COWER.description": "Gain {Block:diff()} [gold]Block[/gold] {Repeat:diff()} times.\nAdd {Cards:diff()} [gold]Feather[/gold]{Cards:plural:|s} to your [gold]Hand[/gold].",
   "BIRDMOD-COWER.title": "Cower",
-  "BIRDMOD-COWER.flavor": "A minor amount of effects, to be sure. Just a small few.",
+  "BIRDMOD-COWER.flavor": "Cho Limbs Bird Style",
   
   "BIRDMOD-SNOWGRAVE.description": "Cast Snowgrave.",
   "BIRDMOD-SNOWGRAVE.title": "Snowgrave",

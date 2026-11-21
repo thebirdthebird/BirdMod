@@ -86,7 +86,7 @@ public class Music() : CustomSingletonModel(HookType.Combat)
         if (combatState.Encounter == null) return Task.CompletedTask;
         if (combatState.RoundNumber > 1 || (int)side != 1) return Task.CompletedTask;
         var name = combatState.Encounter.Id.Entry;
-        MainFile.Logger.Info("hey by the way this is encounter " + name);
+        // MainFile.Logger.Info("hey by the way this is encounter " + name);
         if (name.Contains("BIRDMOD"))
         {
             // hey this means it's one of my encounters and i am now
@@ -95,7 +95,7 @@ public class Music() : CustomSingletonModel(HookType.Combat)
             flag = true;
             MainFile.Logger.Info("WE HAVE SET FLAG TO TRUE");
         }
-        var player = combatState.Players.FirstOrDefault(p => p.Character is Character.BirdMod);
+        var player = combatState.Players.FirstOrDefault(p => p.Character is Character.BirdMod && LocalContext.IsMe(p.Creature));
         if (player == null)
         {
             // NOT A BIRD

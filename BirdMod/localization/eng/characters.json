@@ -5,12 +5,13 @@
   "BIRDMOD-BIRD_MOD.cardsModifierDescription": "Bird cards will now appear in rewards and shops.",
   "BIRDMOD-BIRD_MOD.cardsModifierTitle": "Bird Cards",
   "BIRDMOD-BIRD_MOD.description": "A birdlike raptorlike creature lost in the Spire.\nSpeedy, pretty, but frail.",  
-  "BIRDMOD-BIRD_MOD.eventDeathPrevention": "!!!",
-  "BIRDMOD-BIRD_MOD.goldMonologue": "!",
+  "BIRDMOD-BIRD_MOD.eventDeathPrevention": "I-I can't die yet... Not when I'm finally not so lonely...",
+  "BIRDMOD-BIRD_MOD.goldMonologue": "[sine]Hehehe... Shinies...[/sine]",
   "BIRDMOD-BIRD_MOD.possessiveAdjective": "her",
   "BIRDMOD-BIRD_MOD.pronounObject": "her",
   "BIRDMOD-BIRD_MOD.pronounPossessive": "hers",
   "BIRDMOD-BIRD_MOD.pronounSubject": "she",
   "BIRDMOD-BIRD_MOD.title": "The Bird",
-  "BIRDMOD-BIRD_MOD.titleObject": "The BirdMod"
+  "BIRDMOD-BIRD_MOD.titleObject": "The BirdMod",
+  "BIRDMOD-BIRD_MOD.shortTitle": "Bird"
 }

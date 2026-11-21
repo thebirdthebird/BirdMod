@@ -115,8 +115,8 @@
   "BIRDMOD-HIT_AND_RUN_POWER.smartDescription": "After [gold]Staggering[/gold] is triggered, gain {Amount} [gold]Vim[/gold].",
   "BIRDMOD-HIT_AND_RUN_POWER.title": "Hit and Run",
 
-  "BIRDMOD-GO_FERAL_POWER.description": "At the start of your turn, [gold]Transform[/gold] 1 card in your [gold]Hand[/gold] into a [gold]Talon[/gold] with [gold]Swift[/gold] [blue]1[/blue].",
-  "BIRDMOD-GO_FERAL_POWER.smartDescription": "At the start of your turn, [gold]Transform[/gold] {Amount} {Amount:plural:card|cards} in your [gold]Hand[/gold] into a [gold]Talon[/gold] with [gold]Swift[/gold] [blue]{Amount}[/blue].",
+  "BIRDMOD-GO_FERAL_POWER.description": "At the start of your turn, [gold]Transform[/gold] 1 card in your [gold]Hand[/gold] into a [gold]Feather[/gold] with [gold]Swift[/gold] [blue]1[/blue].",
+  "BIRDMOD-GO_FERAL_POWER.smartDescription": "At the start of your turn, [gold]Transform[/gold] {Amount} {Amount:plural:card|cards} in your [gold]Hand[/gold] into a [gold]Feather[/gold] with [gold]Swift[/gold] [blue]{Amount}[/blue].",
   "BIRDMOD-GO_FERAL_POWER.title": "Go Feral",
 
   "BIRDMOD-MIRROR_MOVE_POWER.description": "For the next [blue]1[/blue] card played by an ally, play a copy on the same target. If the target is the player themselves, play the copy on yourself instead.",
